@@ -1,0 +1,2 @@
+isError: False
+{"documents":[],"total_results":0,"current_page":1,"page_size":25,"total_pages":0,"query_used":{"mevzuat_tur":"Kanun","aranacak_ifade":"kişisel verilerin korunması","aranacak_yer":1,"tam_cumle":true,"mevzuat_no":null,"baslangic_tarihi":"01.01.2016","bitis_tarihi":"30.04.2016","page_number":1,"page_size":25},"error_message":"No legislation found matching the specified criteria."}

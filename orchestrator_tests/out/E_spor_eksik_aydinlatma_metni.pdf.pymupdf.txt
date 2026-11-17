@@ -1,0 +1,87 @@
+KURGUSAL ÖRNEK BELGE – yalnızca demo amaçlıdır; gerçek bir şirkete veya kişiye ait değildir.
+ÇINARALTI SPOR VE SAĞLIKLI YAŞAM HİZMETLERİ LTD. ŞTİ.
+(“ÇınarFit”)
+Üyelerimize Yönelik Kişisel Verilerin İşlenmesi Aydınlatma Metni
+Sürüm 2.1 – Yürürlük tarihi: 15.10.2026
+1. Veri Sorumlusu
+6698 sayılı Kişisel Verilerin Korunması Kanunu (“Kanun”) uyarınca, kişisel verileriniz veri sorumlusu sıfatıyla
+Çınaraltı Spor ve Sağlıklı Yaşam Hizmetleri Ltd. Şti. (“ÇınarFit”) tarafından işlenmektedir.
+Bilgi
+Değer
+Unvan
+Çınaraltı Spor ve Sağlıklı Yaşam Hizmetleri Ltd. Şti.
+MERSİS No
+0000-0000-0000-0077 (kurgusal)
+Adres
+Örnek Mahallesi, Kondisyon Sokak No: 3, 35000 Konak/İzmir
+E-posta
+kvkk@cinarfit.example
+KEP adresi
+cinarfit@kep.example
+Telefon
+0 (232) 000 00 00
+ÇınarFit Türkiye’de yerleşik olduğundan veri sorumlusu temsilcisi atanmamıştır.
+2. İşlenen Kişisel Veri Kategorileri ve Hukuki Sebepler
+ÇınarFit tarafından işlenen kişisel veri kategorileri ve her bir kategorinin dayandığı hukuki sebep aşağıda
+gösterilmiştir:
+Veri kategorisi
+İçerik
+Hukuki sebep
+Kimlik
+Ad, soyad, doğum tarihi
+Bir sözleşmenin kurulması veya ifasıyla doğrudan
+ilgili olması (Kanun md. 5/2-c)
+İletişim
+Cep telefonu numarası, e-posta adresi,
+adres
+Bir sözleşmenin kurulması veya ifasıyla doğrudan
+ilgili olması (Kanun md. 5/2-c)
+Üyelik bilgileri
+Üyelik paketi, başlangıç ve bitiş tarihleri,
+üyelik kartı numarası, kulüp giriş-çıkış
+saatleri
+Bir sözleşmenin kurulması veya ifasıyla doğrudan
+ilgili olması (Kanun md. 5/2-c)
+Finans
+Ödeme bilgileri, fatura bilgileri
+Hukuki yükümlülüğün yerine getirilmesi (Kanun md.
+5/2-ç)
+Görsel kayıt
+Kulüp giriş ve ortak alanlarındaki kamera
+kayıtları
+Temel hak ve özgürlüklerinize zarar vermemek
+kaydıyla ÇınarFit’in meşru menfaati (Kanun md.
+5/2-f)
+İletişim izinleri
+SMS ve e-posta izin durumu
+Açık rızanız (Kanun md. 5/1)
+Soyunma odaları ve duş alanlarında kamera bulunmamaktadır. Kart bilgileriniz ÇınarFit tarafından
+saklanmaz.
+3. Kişisel Verilerin Toplanma Yöntemi
+Kişisel verileriniz; kulüp resepsiyonlarında doldurulan üyelik sözleşmesi ve formlar aracılığıyla fiziki ortamda;
+ÇınarFit mobil uygulaması ve internet sitesi üzerinden yapılan üyelik ve paket yenileme işlemleri sırasında
+elektronik ortamda; kulüp girişlerindeki kart okuyucular ve kamera sistemleri aracılığıyla elektronik ortamda
+toplanmaktadır. Verileriniz kısmen otomatik yollarla (kart okuyucu, kamera ve mobil uygulama) ve otomatik
+olmayan yollarla (basılı formlar) elde edilmektedir.
+4. İlgili Kişi Olarak Haklarınız
+Kanun’un 11’inci maddesi uyarınca ÇınarFit’e başvurarak aşağıdaki haklarınızı kullanabilirsiniz:
+– a) Kişisel verilerinizin işlenip işlenmediğini öğrenme,
+– b) Kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme,
+– c) Kişisel verilerinizin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,
+– ç) Yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçüncü kişileri bilme,
+– d) Kişisel verilerinizin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme,
+– e) Kanun’un 7’nci maddesinde öngörülen şartlar çerçevesinde kişisel verilerinizin silinmesini veya yok
+edilmesini isteme,
+– f) (d) ve (e) bentleri uyarınca yapılan işlemlerin, kişisel verilerinizin aktarıldığı üçüncü kişilere bildirilmesini
+isteme,
+– g) İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir
+sonucun ortaya çıkmasına itiraz etme,
+– ğ) Kişisel verilerinizin kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın
+giderilmesini talep etme.
+Başvurularınızı, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ’e uygun olarak; Örnek
+Mahallesi, Kondisyon Sokak No: 3, 35000 Konak/İzmir adresine yazılı olarak, cinarfit@kep.example KEP
+adresine veya sistemimizde kayıtlı e-posta adresinizden kvkk@cinarfit.example adresine iletebilirsiniz.
+Başvurunuz, talebin niteliğine göre en geç otuz gün içinde ücretsiz olarak sonuçlandırılır; işlemin ayrıca bir
+maliyet gerektirmesi hâlinde Kurulca belirlenen tarifedeki ücret alınabilir.
+Açık rızanıza dayanan işlemler için rızanız ayrı bir form ile alınmaktadır; açık rızanızı dilediğiniz zaman geri
+alabilirsiniz.

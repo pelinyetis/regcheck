@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "regcheck-min": {
+      "transport": "stdio",
+      "command": "python",
+      "args": ["server.py"]
+    }
+  }
+}

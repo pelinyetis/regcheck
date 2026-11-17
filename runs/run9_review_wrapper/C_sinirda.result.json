@@ -1,0 +1,81 @@
+{
+ "review": {
+  "document_id": "C_sinirda",
+  "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+  "overall_assessment": "needs_human_review",
+  "summary": "The notice covers controller identity, purposes, collection method and legal bases, and the Art. 11 rights in specific terms. The only weakness is Art. 10(1)(c): recipients are listed only as broad groups and the transfer purpose is a generic phrase. This deficiency is escalated for lawyer review.",
+  "element_checks": [
+   {
+    "element": "10/1-a",
+    "status": "present",
+    "evidence": "“Unvan | Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.”; address, e-mail, KEP and phone listed; “veri sorumlusu temsilcisi atanmamıştır.”"
+   },
+   {
+    "element": "10/1-b",
+    "status": "present",
+    "evidence": "Purpose table mapping each purpose to data categories, e.g. “Üyelik hesabının oluşturulması ve yönetilmesi”"
+   },
+   {
+    "element": "10/1-c",
+    "status": "deficient",
+    "evidence": "“iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir.” Purpose given only as “Şirket’in ticari faaliyetlerinin yürütülmesi”"
+   },
+   {
+    "element": "10/1-ç",
+    "status": "present",
+    "evidence": "“elektronik ortamda toplanmaktadır”, “kısmen otomatik yollarla”, “otomatik olmayan yollarla”; legal basis per purpose, e.g. “Kanun md. 5/2-c”"
+   },
+   {
+    "element": "10/1-d",
+    "status": "present",
+    "evidence": "“Kanun’un 11’inci maddesi uyarınca Şirket’e başvurarak; - kişisel verilerinizin işlenip işlenmediğini öğrenme,” with all rights listed and application channels"
+   }
+  ],
+  "findings": [
+   {
+    "id": "F1",
+    "element": "10/1-c",
+    "issue_type": "deficient",
+    "severity": "medium",
+    "title": "Recipients and transfer purposes described only in generic terms",
+    "description": "The notice lists recipients only as broad groups (“iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere”) and ties transfers to a generic purpose (“Şirket’in ticari faaliyetlerinin yürütülmesi”). It does not say which recipient group receives which data category, or for what specific purpose. In Kurul Decision 2020/404, a notice that left recipients vague and did not map purposes to data categories was found insufficient. Whether this notice's wording is enough is a legal judgment.",
+    "document_excerpt": "Kişisel verileriniz, yukarıda sayılan amaçların gerçekleştirilmesi ve Şirket’in ticari faaliyetlerinin yürütülmesi kapsamında, Kanun’un 8’inci maddesinde belirtilen şartlara uygun olarak iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir.",
+    "citations": [
+     {
+      "type": "kanun",
+      "reference": "6698 md. 10/1-c",
+      "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+      "supporting_quote": "İşlenen kişisel verilerin kimlere ve hangi amaçla aktarılabileceği,",
+      "retrieved_via": "system_prompt"
+     },
+     {
+      "type": "kurul_karari",
+      "reference": "Kurul Kararı 2020/404",
+      "source_url": "https://www.kvkk.gov.tr/Icerik/6913/2020-404",
+      "supporting_quote": "hangi veri kategorisinin hangi amaçla işleneceğine dair herhangi bir açıklamaya yer verilmediği",
+      "retrieved_via": "get_kvkk_document_markdown"
+     }
+    ],
+    "confidence": 0.55,
+    "escalate": true,
+    "escalation_reason": "A lawyer must decide whether recipient groups such as “iş ortaklarımıza, tedarikçilerimize” with the generic purpose “ticari faaliyetlerinin yürütülmesi” satisfy Art. 10(1)(c), or whether each group and its transfer purpose must be named specifically.",
+    "recommendation": "Name each recipient group specifically (e.g. cargo/delivery companies, payment institutions, IT/hosting providers, public authorities), and state for each the transfer purpose and the data categories transferred. Remove the catch-all “ticari faaliyetlerinin yürütülmesi”."
+   }
+  ],
+  "penalty_exposure": {
+   "applicable": false,
+   "reference": "",
+   "range": "",
+   "source_url": "",
+   "note": "No missing element was found; the only finding is a deficiency pending lawyer review, so the Art. 18/1-a fine is not assessed as applicable at this stage."
+  },
+  "human_review_required": true,
+  "sources_consulted": [
+   {
+    "tool": "get_kvkk_document_markdown",
+    "input": "https://www.kvkk.gov.tr/Icerik/6913/2020-404 (page 2)",
+    "used_in_findings": true
+   }
+  ]
+ }
+}

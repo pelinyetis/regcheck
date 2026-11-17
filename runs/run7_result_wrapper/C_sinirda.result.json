@@ -1,0 +1,81 @@
+{
+ "result": {
+  "document_id": "C_sinirda",
+  "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+  "overall_assessment": "needs_human_review",
+  "summary": "Aydınlatma metni 10/1-a, b, ç ve d unsurlarını somut biçimde karşılamaktadır. Ancak aktarım bölümü (10/1-c) alıcıları geniş gruplarla (iş ortakları, tedarikçiler, üçüncü kişiler) ve genel bir amaçla (ticari faaliyetlerin yürütülmesi) belirtmektedir. Bu unsurun yeterliliği hukukçu tarafından değerlendirilmelidir.",
+  "element_checks": [
+   {
+    "element": "10/1-a",
+    "status": "present",
+    "evidence": "Unvan: Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.; adres, e-posta, KEP ve telefon; temsilci atanmamıştır."
+   },
+   {
+    "element": "10/1-b",
+    "status": "present",
+    "evidence": "Üyelik hesabının oluşturulması ve yönetilmesi; Siparişlerin alınması, teslimi, iade ve değişim işlemleri; Hesap güvenliğinin sağlanması ve dolandırıcılığın önlenmesi"
+   },
+   {
+    "element": "10/1-c",
+    "status": "deficient",
+    "evidence": "iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir."
+   },
+   {
+    "element": "10/1-ç",
+    "status": "present",
+    "evidence": "internet sitesi, mobil uygulama, çağrı merkezi ve e-posta kanalları aracılığıyla elektronik ortamda; Kanun md. 5/2-c, 5/2-ç, 5/2-f"
+   },
+   {
+    "element": "10/1-d",
+    "status": "present",
+    "evidence": "Kanun’un 11’inci Maddesi Kapsamındaki Haklarınız: ... zararın giderilmesini talep etme haklarına sahipsiniz."
+   }
+  ],
+  "findings": [
+   {
+    "id": "F1",
+    "element": "10/1-c",
+    "issue_type": "deficient",
+    "severity": "medium",
+    "title": "Aktarım alıcıları ve amaçları genel ifadelerle belirtilmiş",
+    "description": "Metin, aktarımı 'yukarıda sayılan amaçların gerçekleştirilmesi ve Şirket’in ticari faaliyetlerinin yürütülmesi' kapsamında 'iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına' yapılacağını söylemektedir. Alıcı grupları geniş olup her alıcı grubu için ayrı aktarım amacı ve aktarılan veri kategorisi eşleştirilmemiştir; 'ticari faaliyetlerin yürütülmesi' genel bir amaçtır. Kurul Kararı 2020/404'te alıcıların muğlak bırakılması ve amaç-veri eşleştirmesinin yapılmaması eksiklik olarak değerlendirilmiştir.",
+    "document_excerpt": "Kişisel verileriniz, yukarıda sayılan amaçların gerçekleştirilmesi ve Şirket’in ticari faaliyetlerinin yürütülmesi kapsamında, Kanun’un 8’inci maddesinde belirtilen şartlara uygun olarak iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir.",
+    "citations": [
+     {
+      "type": "kanun",
+      "reference": "6698 md. 10/1-c",
+      "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+      "supporting_quote": "c) İşlenen kişisel verilerin kimlere ve hangi amaçla aktarılabileceği,",
+      "retrieved_via": "system_prompt"
+     },
+     {
+      "type": "kurul_karari",
+      "reference": "Kurul Kararı 2020/404",
+      "source_url": "https://www.kvkk.gov.tr/Icerik/6913/2020-404",
+      "supporting_quote": "kimlere aktarım yapılacağının muğlak bir şekilde veri sorumlusuna bırakıldığı",
+      "retrieved_via": "get_kvkk_document_markdown"
+     }
+    ],
+    "confidence": 0.55,
+    "escalate": true,
+    "escalation_reason": "'İş ortakları', 'tedarikçiler', 'hizmet aldığımız üçüncü kişiler' ve 'kamu kurumları' gibi grup düzeyindeki alıcı tanımları ile 'ticari faaliyetlerin yürütülmesi' amacı, md. 10/1-c ve Tebliğ kapsamında yeterli sayılır mı? Hukukçu karar vermelidir.",
+    "recommendation": "Alıcı gruplarını somutlaştırın (örn. kargo/lojistik firmaları, ödeme kuruluşu, bilgi teknolojileri hizmet sağlayıcıları, yetkili kamu kurumları) ve her grup için aktarım amacını ile aktarılan veri kategorilerini ayrı ayrı yazın; 'ticari faaliyetlerin yürütülmesi' gibi genel ifadeyi kaldırın."
+   }
+  ],
+  "penalty_exposure": {
+   "applicable": false,
+   "reference": "",
+   "range": "",
+   "source_url": "",
+   "note": "Eksik (missing) nitelikte yüksek güvenli bir bulgu yoktur; tek bulgu hukukçu incelemesine yönlendirilmiştir."
+  },
+  "human_review_required": true,
+  "sources_consulted": [
+   {
+    "tool": "get_kvkk_document_markdown",
+    "input": "https://www.kvkk.gov.tr/Icerik/6913/2020-404 (sayfa 2)",
+    "used_in_findings": true
+   }
+  ]
+ }
+}

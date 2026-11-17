@@ -1,0 +1,81 @@
+{
+ "result": {
+  "document_id": "C_sinirda",
+  "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+  "overall_assessment": "needs_human_review",
+  "summary": "The notice covers controller identity, purposes, collection method, legal bases (mapped per purpose) and the Art. 11 rights specifically. The only weakness is Art. 10(1)(c): recipients are described by broad groups and a generic transfer purpose. A lawyer should decide whether this is sufficient.",
+  "element_checks": [
+   {
+    "element": "10/1-a",
+    "status": "present",
+    "evidence": "“Unvan | Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.”; address, e-mail, KEP and phone listed; “veri sorumlusu temsilcisi atanmamıştır.”"
+   },
+   {
+    "element": "10/1-b",
+    "status": "present",
+    "evidence": "Table “İşleme amacı | Veri kategorisi | Hukuki sebep” with specific purposes such as “Üyelik hesabının oluşturulması ve yönetilmesi”"
+   },
+   {
+    "element": "10/1-c",
+    "status": "deficient",
+    "evidence": "“iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir.”"
+   },
+   {
+    "element": "10/1-ç",
+    "status": "present",
+    "evidence": "“internet sitesi, Kuzey Yıldızı mobil uygulaması, müşteri hizmetleri çağrı merkezi ve e-posta kanalları aracılığıyla elektronik ortamda toplanmaktadır”; “Kanun md. 5/2-c”"
+   },
+   {
+    "element": "10/1-d",
+    "status": "present",
+    "evidence": "“kişisel verilerinizin işlenip işlenmediğini öğrenme”; “zararın giderilmesini talep etme”"
+   }
+  ],
+  "findings": [
+   {
+    "id": "F1",
+    "element": "10/1-c",
+    "issue_type": "deficient",
+    "severity": "medium",
+    "title": "Recipients described by broad groups with a generic transfer purpose",
+    "description": "The notice says data may be transferred to “iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere” for the stated purposes and “Şirket’in ticari faaliyetlerinin yürütülmesi”. It does not say which recipient group receives which data or for which specific purpose. Terms such as “iş ortakları” and “üçüncü kişiler” are broad, and the purpose is generic. Kurul Decision 2020/404 criticised recipients left vague and purposes not mapped to data categories. The processors named elsewhere (such as the payment institution) are not tied to a transfer purpose.",
+    "document_excerpt": "Kişisel verileriniz, yukarıda sayılan amaçların gerçekleştirilmesi ve Şirket’in ticari faaliyetlerinin yürütülmesi kapsamında, Kanun’un 8’inci maddesinde belirtilen şartlara uygun olarak iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir.",
+    "citations": [
+     {
+      "type": "kanun",
+      "reference": "6698 md. 10/1-c",
+      "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+      "supporting_quote": "İşlenen kişisel verilerin kimlere ve hangi amaçla aktarılabileceği",
+      "retrieved_via": "system_prompt"
+     },
+     {
+      "type": "kurul_karari",
+      "reference": "Kurul Kararı 2020/404",
+      "source_url": "https://www.kvkk.gov.tr/Icerik/6913/2020-404",
+      "supporting_quote": "kimlere aktarım yapılacağının muğlak bir şekilde veri sorumlusuna bırakıldığı",
+      "retrieved_via": "get_kvkk_document_markdown"
+     }
+    ],
+    "confidence": 0.55,
+    "escalate": true,
+    "escalation_reason": "A lawyer must decide whether recipient groups such as “iş ortakları”, “tedarikçiler” and “hizmet aldığımız üçüncü kişiler”, with a generic “ticari faaliyetlerin yürütülmesi” purpose, meet Art. 10(1)(c). The alternative is that each recipient group and its transfer purpose must be spelled out.",
+    "recommendation": "List each recipient group (for example payment institutions, cargo and delivery companies, IT and hosting providers, authorised public bodies). For each group, state the transfer purpose and the data categories transferred. Drop the generic “ticari faaliyetlerin yürütülmesi” wording and replace “iş ortakları” and “üçüncü kişiler” with defined categories."
+   }
+  ],
+  "penalty_exposure": {
+   "applicable": false,
+   "reference": "",
+   "range": "",
+   "source_url": "",
+   "note": "The only issue is a deficiency pending lawyer review, so no definitive Art. 10 violation has been established."
+  },
+  "human_review_required": true,
+  "sources_consulted": [
+   {
+    "tool": "get_kvkk_document_markdown",
+    "input": "https://www.kvkk.gov.tr/Icerik/6913/2020-404 (page 2)",
+    "used_in_findings": true
+   }
+  ]
+ }
+}

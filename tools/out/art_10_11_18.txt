@@ -1,0 +1,2 @@
+isError: False
+No articles found containing '"Kişisel verilerin elde" OR "İlgili kişinin hakları" OR "aydınlatma yükümlülüğünü yerine getirmeyenler" OR "Herkes, veri sorumlusuna"' in Kanun 6698

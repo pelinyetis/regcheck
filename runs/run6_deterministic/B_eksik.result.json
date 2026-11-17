@@ -1,0 +1,108 @@
+{
+ "document_id": "B_eksik",
+ "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+ "overall_assessment": "non_compliant",
+ "summary": "Metin veri sorumlusunun kimliğini, işleme amaçlarını ve alıcı gruplarını aktarım amaçlarıyla birlikte somut biçimde veriyor. Ancak kişisel veri toplama yöntemi ile hukuki sebep (md. 5/6 şartları) hiç belirtilmemiş, ilgili kişinin md. 11 kapsamındaki hakları da sayılmamış, yalnızca iletişim adresi verilmiştir.",
+ "element_checks": [
+  {
+   "element": "10/1-a",
+   "status": "present",
+   "evidence": "Unvan: Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.; Adres; E-posta: kvkk@kuzeyyildizi.example; temsilci atanmamıştır"
+  },
+  {
+   "element": "10/1-b",
+   "status": "present",
+   "evidence": "İşleme amacı / Veri kategorisi tablosu (üyelik, sipariş, fatura, güvenlik, talep-şikâyet, kampanya)"
+  },
+  {
+   "element": "10/1-c",
+   "status": "present",
+   "evidence": "Alıcı grubu / Aktarım amacı tablosu: Kargo ve lojistik firmaları – Siparişlerin teslim edilmesi..."
+  },
+  {
+   "element": "10/1-ç",
+   "status": "missing",
+   "evidence": ""
+  },
+  {
+   "element": "10/1-d",
+   "status": "missing",
+   "evidence": ""
+  }
+ ],
+ "findings": [
+  {
+   "id": "F1",
+   "element": "10/1-ç",
+   "issue_type": "missing",
+   "severity": "high",
+   "title": "Veri toplama yöntemi ve hukuki sebep belirtilmemiş",
+   "description": "Metinde kişisel verilerin hangi kanaldan (web sitesi, mobil uygulama, mağaza vb.) ve otomatik/otomatik olmayan yolla toplandığı belirtilmemiştir. Ayrıca işleme faaliyetlerinin dayandığı KVKK md. 5/6 hukuki sebepleri da yer almamaktadır; amaç tablosundaki VUK, TTK ve 6502 sayılı Kanun atıfları amaç bazında açık bir hukuki sebep beyanı yerine geçmemektedir. 2021/85 sayılı Kurul Kararı, Tebliğ'in 'hukuki sebep' bendini bu yönde aktarmaktadır.",
+   "document_excerpt": "Bu metin, Kanun’un 10’uncu maddesi uyarınca hazırlanmıştır.",
+   "citations": [
+    {
+     "type": "kanun",
+     "reference": "6698 md. 10/1-ç",
+     "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+     "supporting_quote": "ç) Kişisel veri toplamanın yöntemi ve hukuki sebebi,",
+     "retrieved_via": "system_prompt"
+    },
+    {
+     "type": "kurul_karari",
+     "reference": "Kurul Kararı 2021/85",
+     "source_url": "https://www.kvkk.gov.tr/Icerik/7112/2021-85",
+     "supporting_quote": "ç) Kişisel veri toplamanın yöntemi ve hukuki sebebi, d) 11 inci maddede sayılan diğer hakları, konusunda bilgi vermekle yükümlüdür.",
+     "retrieved_via": "get_kvkk_document_markdown"
+    }
+   ],
+   "confidence": 0.95,
+   "escalate": false,
+   "escalation_reason": "",
+   "recommendation": "Verilerin toplandığı kanalları ve toplama yöntemini (otomatik/otomatik olmayan) belirtin; her işleme amacı için dayanılan KVKK md. 5/2 ve gerekirse md. 6 şartını açıkça yazın."
+  },
+  {
+   "id": "F2",
+   "element": "10/1-d",
+   "issue_type": "missing",
+   "severity": "high",
+   "title": "İlgili kişinin md. 11 kapsamındaki hakları sayılmamış",
+   "description": "Metinde ilgili kişinin KVKK md. 11'de sayılan hakları (öğrenme, bilgi talep etme, düzeltme, silme, üçüncü kişilere bildirim, itiraz, zararın giderilmesi vb.) yer almamaktadır; yalnızca soru ve talepler için e-posta adresi verilmiştir. Bu, hakların bildirilmesi anlamına gelmez.",
+   "document_excerpt": "Kişisel verilerinize ilişkin her türlü soru ve talebiniz için kvkk@kuzeyyildizi.example adresinden bizimle iletişime geçebilirsiniz.",
+   "citations": [
+    {
+     "type": "kanun",
+     "reference": "6698 md. 10/1-d",
+     "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+     "supporting_quote": "d) 11 inci maddede sayılan diğer hakları,",
+     "retrieved_via": "system_prompt"
+    },
+    {
+     "type": "kanun",
+     "reference": "6698 md. 11/1",
+     "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+     "supporting_quote": "Kişisel verilerin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme,",
+     "retrieved_via": "system_prompt"
+    }
+   ],
+   "confidence": 0.95,
+   "escalate": false,
+   "escalation_reason": "",
+   "recommendation": "KVKK md. 11/1 (a)–(ğ) bentlerindeki hakların tamamını metne ekleyin ve başvuru yöntemini (e-posta, KEP, yazılı) belirtin."
+  }
+ ],
+ "penalty_exposure": {
+  "applicable": true,
+  "reference": "6698 md. 18/1-a",
+  "range": "5.000 TL – 100.000 TL (Kanun metnindeki tutar)",
+  "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+  "note": "Tutarlar Kanun metnindeki tutarlardır; güncel (yeniden değerlenmiş) tutarlar hukukçu tarafından teyit edilmelidir."
+ },
+ "human_review_required": false,
+ "sources_consulted": [
+  {
+   "tool": "get_kvkk_document_markdown",
+   "input": "https://www.kvkk.gov.tr/Icerik/7112/2021-85 (sayfa 1)",
+   "used_in_findings": true
+  }
+ ]
+}

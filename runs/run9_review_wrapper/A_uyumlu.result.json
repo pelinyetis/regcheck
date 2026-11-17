@@ -1,0 +1,45 @@
+{
+ "review": {
+  "document_id": "A_uyumlu",
+  "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+  "overall_assessment": "compliant",
+  "summary": "The notice covers all five Art. 10(1) elements specifically: controller identity and contact details, purposes mapped to data categories and legal bases, recipient groups with transfer purposes, collection channels and methods, and the full list of Art. 11 rights. No deficiencies were identified.",
+  "element_checks": [
+   {
+    "element": "10/1-a",
+    "status": "present",
+    "evidence": "“Unvan | Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.”; address, e-mail, KEP and phone listed; “veri sorumlusu temsilcisi atanmamıştır”"
+   },
+   {
+    "element": "10/1-b",
+    "status": "present",
+    "evidence": "“Üyelik hesabının oluşturulması ve yönetilmesi”; “Hesap güvenliğinin sağlanması ve dolandırıcılığın önlenmesi” – specific purposes mapped to data categories"
+   },
+   {
+    "element": "10/1-c",
+    "status": "present",
+    "evidence": "“Kargo ve lojistik firmaları | Siparişlerin teslim edilmesi ve iade ürünlerin teslim alınması”; each recipient group has a stated transfer purpose"
+   },
+   {
+    "element": "10/1-ç",
+    "status": "present",
+    "evidence": "“elektronik ortamda toplanmaktadır”; “kısmen otomatik yollarla”; “otomatik olmayan yollarla”; “Kanun md. 5/2-c”, “Kanun md. 5/2-ç”, “Kanun md. 5/2-f” per purpose"
+   },
+   {
+    "element": "10/1-d",
+    "status": "present",
+    "evidence": "“Kanun’un 11’inci maddesi uyarınca Şirket’e başvurarak;” followed by all nine rights and application channels"
+   }
+  ],
+  "findings": [],
+  "penalty_exposure": {
+   "applicable": false,
+   "reference": "",
+   "range": "",
+   "source_url": "",
+   "note": "No Art. 10 non-compliance identified, so no administrative fine exposure under Art. 18 arises from this review."
+  },
+  "human_review_required": false,
+  "sources_consulted": []
+ }
+}

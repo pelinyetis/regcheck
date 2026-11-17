@@ -1,0 +1,2 @@
+isError: False
+{"documents":[],"total_results":0,"current_page":1,"page_size":25,"total_pages":0,"query_used":{"mevzuat_tur":"Tebliğ","aranacak_ifade":"aydınlatma","aranacak_yer":1,"tam_cumle":false,"mevzuat_no":null,"baslangic_tarihi":"01.03.2018","bitis_tarihi":"31.03.2018","page_number":1,"page_size":25},"error_message":"No communiqués found matching the specified criteria."}

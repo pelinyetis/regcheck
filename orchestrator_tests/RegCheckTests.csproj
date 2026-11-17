@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Local test harness: compiles the coded workflows of the Studio project RegCheck_Orchestrator
+       (the same .cs files, unchanged) against a tiny stub of UiPath.CodedWorkflows and runs them on the demo docs.
+       Run: dotnet run -c Release -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <StudioProject>$(USERPROFILE)\Documents\UiPath\RegCheck_Orchestrator</StudioProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(StudioProject)\*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- same versions as the Studio project's project.json -->
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.3.0" />
+    <PackageReference Include="PdfPig" Version="0.1.16" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,84 @@
+{
+ "document_id": "C_sinirda",
+ "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+ "overall_assessment": "needs_human_review",
+ "summary": "Metin 10/1-a, b, ç ve d unsurlarını somut biçimde karşılıyor; amaç–veri–hukuki sebep eşlemesi ve haklar eksiksiz. Tek sınırda nokta, aktarım alıcılarının genel kategorilerle ve \"ticari faaliyetlerin yürütülmesi\" gibi geniş bir amaçla belirtilmesidir (10/1-c); bu husus hukukçu değerlendirmesine bırakılmıştır. Kaynak sunucuları sağlıklıydı.",
+ "element_checks": [
+  {
+   "element": "10/1-a",
+   "status": "present",
+   "evidence": "Unvan: Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.; adres, e-posta, KEP, telefon; temsilci atanmamıştır."
+  },
+  {
+   "element": "10/1-b",
+   "status": "present",
+   "evidence": "Üyelik hesabının oluşturulması ve yönetilmesi; Siparişlerin alınması, teslimi, iade ve değişim işlemleri; Hesap güvenliğinin sağlanması ve dolandırıcılığın önlenmesi"
+  },
+  {
+   "element": "10/1-c",
+   "status": "deficient",
+   "evidence": "iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir"
+  },
+  {
+   "element": "10/1-ç",
+   "status": "present",
+   "evidence": "internet sitesi, mobil uygulama, çağrı merkezi ve e-posta kanalları... kısmen otomatik yollarla; ... otomatik olmayan yollarla; Kanun md. 5/2-c"
+  },
+  {
+   "element": "10/1-d",
+   "status": "present",
+   "evidence": "Kanun’un 11’inci maddesi uyarınca Şirket’e başvurarak; ... zararın giderilmesini talep etme haklarına sahipsiniz."
+  }
+ ],
+ "findings": [
+  {
+   "id": "F1",
+   "element": "10/1-c",
+   "issue_type": "vague",
+   "severity": "low",
+   "title": "Aktarım alıcıları ve amaçları genel ifadelerle belirtilmiş",
+   "description": "Alıcılar 'iş ortakları, tedarikçiler, hizmet alınan üçüncü kişiler ve yetkili kamu kurumları' olarak grup düzeyinde sayılmış; ancak aktarım amacı 'yukarıda sayılan amaçlar ve ticari faaliyetlerin yürütülmesi' şeklinde geniş bırakılmış, hangi alıcı grubuna hangi amaçla ve hangi veriyle aktarım yapıldığı eşlenmemiştir (örn. ödeme kuruluşu, kargo firması). Kurul 2020/404 kararında benzer şekilde alıcıların muğlak bırakılmasını eleştirmiştir; ancak o olaydaki ifade ('uygun gördüğü diğer üçüncü kişiler') bu metindekinden daha açık uçludur. Grup düzeyinde belirtme yeterli sayılabilir; bu nedenle sınırda değerlendirilmiştir.",
+   "document_excerpt": "Kişisel verileriniz, yukarıda sayılan amaçların gerçekleştirilmesi ve Şirket’in ticari faaliyetlerinin yürütülmesi kapsamında, ... iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir.",
+   "citations": [
+    {
+     "type": "kanun",
+     "reference": "6698 md. 10/1-c",
+     "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+     "supporting_quote": "c) İşlenen kişisel verilerin kimlere ve hangi amaçla aktarılabileceği,",
+     "retrieved_via": "system_prompt"
+    },
+    {
+     "type": "kurul_karari",
+     "reference": "Kurul Kararı 2020/404",
+     "source_url": "https://www.kvkk.gov.tr/Icerik/6913/2020-404",
+     "supporting_quote": "kimlere aktarım yapılacağının muğlak bir şekilde veri sorumlusuna bırakıldığı",
+     "retrieved_via": "get_kvkk_document_markdown"
+    }
+   ],
+   "confidence": 0.55,
+   "escalate": true,
+   "escalation_reason": "Hukukçu, alıcı gruplarının ve 'ticari faaliyetlerin yürütülmesi' amacının Kurul uygulamasında yeterince somut sayılıp sayılmayacağına, alıcı grubu–amaç eşlemesi gerekip gerekmediğine karar vermelidir.",
+   "recommendation": "Her alıcı grubu için aktarım amacını ve aktarılan veri kategorisini ayrı ayrı belirtin (örn. ödeme kuruluşu: ödemenin tahsili; kargo firmaları: teslimat; yetkili kamu kurumları: ilgili mevzuattan doğan yükümlülükler). 'Ticari faaliyetlerin yürütülmesi' gibi geniş ifadeyi kaldırın."
+  }
+ ],
+ "penalty_exposure": {
+  "applicable": false,
+  "reference": "",
+  "range": "",
+  "source_url": "",
+  "note": "Yüksek güvenilirlikli bir md. 10 ihlali tespit edilmedi; tek bulgu hukukçu değerlendirmesine bırakıldı."
+ },
+ "human_review_required": true,
+ "sources_consulted": [
+  {
+   "tool": "check_government_servers_health",
+   "input": "",
+   "used_in_findings": false
+  },
+  {
+   "tool": "get_kvkk_document_markdown",
+   "input": "https://www.kvkk.gov.tr/Icerik/6913/2020-404 (page 2)",
+   "used_in_findings": true
+  }
+ ]
+}

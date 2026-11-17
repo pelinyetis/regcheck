@@ -1,0 +1,43 @@
+{
+ "document_id": "A_uyumlu",
+ "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+ "overall_assessment": "compliant",
+ "summary": "Aydınlatma metni, md. 10/1 (a), (b), (c), (ç) ve (d) unsurlarının tamamını belirli ve somut biçimde karşılamaktadır; bulgu tespit edilmemiştir. Not: RegCheck MCP sunucusu bağlanamadığından sağlık kontrolü ve araç çağrıları yapılamamış, değerlendirme yalnızca sistem talimatındaki md. 10/11/18 metnine dayanmaktadır.",
+ "element_checks": [
+  {
+   "element": "10/1-a",
+   "status": "present",
+   "evidence": "Unvan: Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.; adres, e-posta, KEP ve telefon belirtilmiş; \"veri sorumlusu temsilcisi atanmamıştır\"."
+  },
+  {
+   "element": "10/1-b",
+   "status": "present",
+   "evidence": "Amaçlar veri kategorileri ve hukuki sebeplerle eşleştirilmiş tabloda sayılmış (üyelik yönetimi, sipariş/teslim/iade, fatura, hesap güvenliği vb.)."
+  },
+  {
+   "element": "10/1-c",
+   "status": "present",
+   "evidence": "Alıcı grubu ve aktarım amacı tablosu: \"Kargo ve lojistik firmaları | Siparişlerin teslim edilmesi ve iade ürünlerin teslim alınması\"; yurt dışı aktarım yok."
+  },
+  {
+   "element": "10/1-ç",
+   "status": "present",
+   "evidence": "Toplama kanalları ve otomatik/otomatik olmayan yöntem belirtilmiş; her amaç için \"Kanun md. 5/2-c\", \"5/2-ç\", \"5/2-f\", \"5/1: açık rıza\" gibi hukuki sebep yazılmış."
+  },
+  {
+   "element": "10/1-d",
+   "status": "present",
+   "evidence": "Md. 11 kapsamındaki dokuz hakkın tamamı sıralanmış ve başvuru yolları (adres, KEP, e-posta) verilmiştir."
+  }
+ ],
+ "findings": [],
+ "penalty_exposure": {
+  "applicable": false,
+  "reference": "",
+  "range": "",
+  "source_url": "",
+  "note": "Md. 10 kapsamında uyumsuzluk tespit edilmediğinden idari para cezası riski değerlendirilmemiştir."
+ },
+ "human_review_required": false,
+ "sources_consulted": []
+}

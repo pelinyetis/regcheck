@@ -1,0 +1,71 @@
+{
+  "Id": "d8fa6d8f0da40d2e",
+  "TraceId": "69dac0b535b24ed1805d391068b4b617",
+  "ParentId": "af864da907019771",
+  "Name": "Agent output",
+  "StartTime": "2026-11-05T13:27:40.825509Z",
+  "EndTime": "2026-11-05T13:27:40.835616Z",
+  "Attributes": {
+    "type": "agentOutput",
+    "span_type": "agentOutput",
+    "uipath.custom_instrumentation": true,
+    "output": {
+      "document_id": "KURGUSAL ÖRNEK BELGE – Müşteri ve Üyelik Süreçlerine İlişkin Kişisel Verilerin İşlenmesi Aydınlatma Metni Sürüm 1.0",
+      "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+      "overall_assessment": "compliant",
+      "summary": "Metin, KVKK md. 10/1 kapsamındaki veri sorumlusu kimliği, işleme amaçları, aktarım alıcıları ve amaçları, toplama yöntemi ile hukuki sebepler ve ilgili kişi hakları unsurlarını somut olarak içermektedir. Tespit edilen bir aykırılık bulunmamaktadır.",
+      "element_checks": [
+        {
+          "element": "6698 md. 10/1-a",
+          "status": "present",
+          "evidence": "“Unvan | Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.”; “Adres | Örnek Mahallesi, Kurgu Sokak No: 7, 34000 Kadıköy/İstanbul”; “E-posta | kvkk@kuzeyyildizi.example” ve “Şirket Türkiye’de yerleşik olduğundan veri sorumlusu temsilcisi atanmamıştır.”"
+        },
+        {
+          "element": "6698 md. 10/1-b",
+          "status": "present",
+          "evidence": "“Kişisel verileriniz aşağıdaki amaçlarla ve her bir amacın karşısında belirtilen hukuki sebebe dayanılarak işlenmektedir” ifadesini izleyen tabloda üyelik, sipariş, fatura, güvenlik, talep/şikâyet ve pazarlama amaçları belirtilmiştir."
+        },
+        {
+          "element": "6698 md. 10/1-c",
+          "status": "present",
+          "evidence": "Aktarım tablosunda “Kargo ve lojistik firmaları”, “Ödeme kuruluşları ve bankalar”, “Barındırma ve bulut hizmet sağlayıcısı”, “Mali müşavir ve bağımsız denetim şirketi” ile kamu kurumları/yargı mercileri ve her biri için aktarım amacı belirtilmiştir."
+        },
+        {
+          "element": "6698 md. 10/1-ç",
+          "status": "present",
+          "evidence": "“internet sitesi, ... mobil uygulaması, müşteri hizmetleri çağrı merkezi ve e-posta kanalları aracılığıyla elektronik ortamda toplanmaktadır”; “kısmen otomatik yollarla” ve “otomatik olmayan yollarla” ifadeleri ile Kanun md. 5/1, 5/2-c, 5/2-ç, 5/2-e ve 5/2-f hukuki sebepleri belirtilmiştir."
+        },
+        {
+          "element": "6698 md. 10/1-d",
+          "status": "present",
+          "evidence": "“Kanun’un 11’inci maddesi uyarınca Şirket’e başvurarak” ifadesi altında Kanun md. 11’deki öğrenme, bilgi talebi, amaç öğrenme, aktarım alıcılarını bilme, düzeltme, silme/yok etme, bildirim, itiraz ve zarar giderimi hakları sayılmıştır."
+        }
+      ],
+      "findings": [],
+      "penalty_exposure": {
+        "applicable": false,
+        "reference": "",
+        "range": "",
+        "source_url": "",
+        "note": "KVKK md. 10 kapsamında tespit edilmiş bir uyumsuzluk bulunmadığından bu inceleme bakımından ceza maruziyeti uygulanabilir değildir."
+      },
+      "human_review_required": false,
+      "sources_consulted": [
+        {
+          "tool": "check_government_servers_health",
+          "input": "{}",
+          "used_in_findings": false
+        }
+      ]
+    },
+    "executionType": 0,
+    "referenceId": "715e4d99-5796-4267-a28f-085d0c81e547",
+    "uipath.source": 1,
+    "output.mime_type": "application/json",
+    "agentId": "715e4d99-5796-4267-a28f-085d0c81e547"
+  },
+  "Status": 1,
+  "SpanType": "agentOutput",
+  "JobKey": "bc269d10-6938-486f-bec7-eb90c272bda4",
+  "UpdatedAt": "2026-11-05T13:27:40.836132Z"
+}

@@ -1,0 +1,29 @@
+RegCheck · Privacy notice review (KVKK Art. 10)
+Document: B_eksik_aydinlatma_metni.docx
+Sender: ornek.gonderen@example.com
+Data controller: Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.
+Overall result: ❌ Non-compliant
+Summary: The notice clearly covers controller identity (Art. 10(1)(a)), purposes (Art. 10(1)(b)) and recipient groups with transfer purposes (Art. 10(1)(c)). However, it states neither the collection method nor the legal basis (Art. 10(1)(ç)), and it does not list the data subject's rights under Art. 11 (Art. 10(1)(d)); the contact section only provides an e-mail address.
+
+Findings (2; 0 awaiting a lawyer's decision)
+1. Collection method and legal basis are not stated
+   Element: 10/1-ç (missing) · Severity: High · Confidence: 0.92
+   Issue: The notice does not state how personal data is collected (channel, automated or non-automated means). It also does not state which Art. 5/6 processing condition each purpose relies on. Statutory references in the purpose table (VUK, TTK, 6502) are not a legal-basis statement, and the Art. 8 mention concerns transfers only. The only related text is that explicit consent is handled in a separate notice. Kurul Decision 2021/85 was read and recites Art. 10(1)(ç); the page retrieved was cut off before the Communiqué Art. 5(1)(h) passage, so only the Art. 10 recital is cited.
+   Source: 6698 md. 10/1-ç: “ç) Kişisel veri toplamanın yöntemi ve hukuki sebebi,”
+   Source: Kurul Kararı 2021/85: “ç) Kişisel veri toplamanın yöntemi ve hukuki sebebi, d) 11 inci maddede sayılan diğer hakları, konusunda bilgi vermekle yükümlüdür.”
+   Recommendation: Add the collection method (e.g. website/mobile app membership form, order process, customer service correspondence, automated or not). Add the legal basis for each purpose, e.g. Art. 5(2)(c) for contract performance, Art. 5(2)(a) for legal obligations, Art. 5(2)(f) for legitimate interest, and explicit consent for marketing.
+
+2. Data subject rights under Art. 11 are not listed
+   Element: 10/1-d (missing) · Severity: High · Confidence: 0.93
+   Issue: The notice has no section on the rights under Art. 11. The 'İletişim' section only gives an e-mail address for questions and requests. It does not list the rights or explain how to apply.
+   From the document: “Kişisel verilerinize ilişkin her türlü soru ve talebiniz için kvkk@kuzeyyildizi.example adresinden bizimle iletişime geçebilirsiniz.”
+   Source: 6698 md. 10/1-d: “d) 11 inci maddede sayılan diğer hakları,”
+   Source: 6698 md. 11: “a) Kişisel veri işlenip işlenmediğini öğrenme,”
+   Source: Kurul Kararı 2021/85: “d) 11 inci maddede sayılan diğer hakları, konusunda bilgi vermekle yükümlüdür.”
+   Recommendation: Add a section listing all the Art. 11(1) rights (a)–(ğ). Explain how to apply to the controller (e-mail, KEP, written application).
+
+Administrative fine exposure: 6698 md. 18/1-a: TRY 5,000 – 100,000 (amounts as stated in the Law)
+
+Sources
+https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5
+https://www.kvkk.gov.tr/Icerik/7112/2021-85

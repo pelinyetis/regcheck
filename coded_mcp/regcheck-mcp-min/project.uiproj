@@ -1,0 +1,6 @@
+{
+  "ProjectType": "Mcpserver",
+  "Name": "regcheck-mcp-min",
+  "Description": "RegCheck coded MCP server - the 4 tools of the KVKK agent - vendored mevzuat-mcp and yargi-mcp",
+  "MainFile": null
+}

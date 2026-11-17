@@ -1,0 +1,2 @@
+isError: False
+{"documents":[],"total_results":0,"current_page":1,"page_size":3,"total_pages":0,"query_used":{"mevzuat_tur":"Tebliğ","aranacak_ifade":"\"Aydınlatma Yükümlülüğünün Yerine Getirilmesinde\"","aranacak_yer":1,"tam_cumle":false,"mevzuat_no":null,"baslangic_tarihi":null,"bitis_tarihi":null,"page_number":1,"page_size":3},"error_message":"No communiqués found matching the specified criteria."}

@@ -1,0 +1,117 @@
+{
+ "result": {
+  "document_id": "B_eksik",
+  "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+  "overall_assessment": "non_compliant",
+  "summary": "The notice clearly covers controller identity (Art. 10(1)(a)), purposes (Art. 10(1)(b)) and recipient groups with transfer purposes (Art. 10(1)(c)). However, it states neither the collection method nor the legal basis (Art. 10(1)(ç)), and it does not list the data subject's rights under Art. 11 (Art. 10(1)(d)); the contact section only provides an e-mail address.",
+  "element_checks": [
+   {
+    "element": "10/1-a",
+    "status": "present",
+    "evidence": "“Unvan | Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.”; address, e-mail, KEP and phone listed; “veri sorumlusu temsilcisi atanmamıştır.”"
+   },
+   {
+    "element": "10/1-b",
+    "status": "present",
+    "evidence": "Purpose table mapped to data categories, e.g. “Siparişlerin alınması, teslimi, iade ve değişim işlemleri | Kimlik, İletişim, Müşteri işlem”"
+   },
+   {
+    "element": "10/1-c",
+    "status": "present",
+    "evidence": "“Kargo ve lojistik firmaları | Siparişlerin teslim edilmesi ve iade ürünlerin teslim alınması”; recipient groups each with a transfer purpose"
+   },
+   {
+    "element": "10/1-ç",
+    "status": "missing",
+    "evidence": ""
+   },
+   {
+    "element": "10/1-d",
+    "status": "missing",
+    "evidence": ""
+   }
+  ],
+  "findings": [
+   {
+    "id": "F1",
+    "element": "10/1-ç",
+    "issue_type": "missing",
+    "severity": "high",
+    "title": "Collection method and legal basis are not stated",
+    "description": "The notice does not state how personal data is collected (channel, automated or non-automated means). It also does not state which Art. 5/6 processing condition each purpose relies on. Statutory references in the purpose table (VUK, TTK, 6502) are not a legal-basis statement, and the Art. 8 mention concerns transfers only. The only related text is that explicit consent is handled in a separate notice. Kurul Decision 2021/85 was read and recites Art. 10(1)(ç); the page retrieved was cut off before the Communiqué Art. 5(1)(h) passage, so only the Art. 10 recital is cited.",
+    "document_excerpt": "",
+    "citations": [
+     {
+      "type": "kanun",
+      "reference": "6698 md. 10/1-ç",
+      "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+      "supporting_quote": "ç) Kişisel veri toplamanın yöntemi ve hukuki sebebi,",
+      "retrieved_via": "system_prompt"
+     },
+     {
+      "type": "kurul_karari",
+      "reference": "Kurul Kararı 2021/85",
+      "source_url": "https://www.kvkk.gov.tr/Icerik/7112/2021-85",
+      "supporting_quote": "ç) Kişisel veri toplamanın yöntemi ve hukuki sebebi, d) 11 inci maddede sayılan diğer hakları, konusunda bilgi vermekle yükümlüdür.",
+      "retrieved_via": "get_kvkk_document_markdown"
+     }
+    ],
+    "confidence": 0.92,
+    "escalate": false,
+    "escalation_reason": "",
+    "recommendation": "Add the collection method (e.g. website/mobile app membership form, order process, customer service correspondence, automated or not). Add the legal basis for each purpose, e.g. Art. 5(2)(c) for contract performance, Art. 5(2)(a) for legal obligations, Art. 5(2)(f) for legitimate interest, and explicit consent for marketing."
+   },
+   {
+    "id": "F2",
+    "element": "10/1-d",
+    "issue_type": "missing",
+    "severity": "high",
+    "title": "Data subject rights under Art. 11 are not listed",
+    "description": "The notice has no section on the rights under Art. 11. The 'İletişim' section only gives an e-mail address for questions and requests. It does not list the rights or explain how to apply.",
+    "document_excerpt": "Kişisel verilerinize ilişkin her türlü soru ve talebiniz için kvkk@kuzeyyildizi.example adresinden bizimle iletişime geçebilirsiniz.",
+    "citations": [
+     {
+      "type": "kanun",
+      "reference": "6698 md. 10/1-d",
+      "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+      "supporting_quote": "d) 11 inci maddede sayılan diğer hakları,",
+      "retrieved_via": "system_prompt"
+     },
+     {
+      "type": "kanun",
+      "reference": "6698 md. 11",
+      "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+      "supporting_quote": "a) Kişisel veri işlenip işlenmediğini öğrenme,",
+      "retrieved_via": "system_prompt"
+     },
+     {
+      "type": "kurul_karari",
+      "reference": "Kurul Kararı 2021/85",
+      "source_url": "https://www.kvkk.gov.tr/Icerik/7112/2021-85",
+      "supporting_quote": "d) 11 inci maddede sayılan diğer hakları, konusunda bilgi vermekle yükümlüdür.",
+      "retrieved_via": "get_kvkk_document_markdown"
+     }
+    ],
+    "confidence": 0.93,
+    "escalate": false,
+    "escalation_reason": "",
+    "recommendation": "Add a section listing all the Art. 11(1) rights (a)–(ğ). Explain how to apply to the controller (e-mail, KEP, written application)."
+   }
+  ],
+  "penalty_exposure": {
+   "applicable": true,
+   "reference": "6698 md. 18/1-a",
+   "range": "TRY 5,000 – 100,000 (amounts as stated in the Law)",
+   "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+   "note": "Amounts are as stated in the text of the Law; the current (revalued) amounts must be confirmed by a lawyer."
+  },
+  "human_review_required": false,
+  "sources_consulted": [
+   {
+    "tool": "get_kvkk_document_markdown",
+    "input": "https://www.kvkk.gov.tr/Icerik/7112/2021-85 (page 1)",
+    "used_in_findings": true
+   }
+  ]
+ }
+}

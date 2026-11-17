@@ -1,0 +1,22 @@
+RegCheck · Privacy notice review (KVKK Art. 10)
+Document: C_sinirda_aydinlatma_metni.docx
+Sender: ornek.gonderen@example.com
+Data controller: Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.
+Overall result: ⚠️ Lawyer review required
+Summary: Metin 10/1-a, b, ç ve d unsurlarını somut biçimde karşılıyor; veri kategorisi–amaç–hukuki sebep eşlemesi yapılmış. Tek sorun, aktarım bölümünde alıcı gruplarının ("iş ortakları", "tedarikçiler") ve aktarım amacının ("ticari faaliyetlerin yürütülmesi") genel kalmasıdır; bu bir değerlendirme meselesi olduğundan hukukçu incelemesine yönlendirilmiştir. KVKK ve mevzuat kaynakları erişilebilirdi.
+
+Findings (1; 1 awaiting a lawyer's decision)
+1. Aktarım alıcıları ve amaçları genel ifadelerle belirtilmiş   ⚠ Needs review
+   Element: 10/1-c (vague) · Severity: Low · Confidence: 0.55
+   Issue: Aktarım bölümünde alıcı grupları ('iş ortakları', 'tedarikçiler', 'hizmet aldığımız üçüncü kişiler') kategorik olarak sayılmış, ancak her grubun kim olduğu (ör. kargo, ödeme kuruluşu, bilişim hizmeti sağlayıcı) ve hangi amaçla aktarım yapılacağı ('ticari faaliyetlerin yürütülmesi') somutlaştırılmamıştır. Kurul 2020/404 kararında alıcıların muğlak bırakılmasını eleştirmiştir; ancak burada ifade '…uygun gördüğü diğer üçüncü kişilere' kadar açık uçlu olmadığından yeterlilik bağlama bağlıdır. Karar 2021/85'te Tebliğ 5/1-(ı) alıntılanmış olup alıcı grubu ve amaç gerektiğini belirtir. Bir değerlendirme gerektiren sınırda durumdur.
+   From the document: “yukarıda sayılan amaçların gerçekleştirilmesi ve Şirket’in ticari faaliyetlerinin yürütülmesi kapsamında... iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir.”
+   Source: 6698 md. 10/1-c: “c) İşlenen kişisel verilerin kimlere ve hangi amaçla aktarılabileceği,”
+   Source: Kurul Kararı 2021/85: “(ı) bendinde aydınlatma yükümlülüğü kapsamında, kişisel verilerin aktarılma amacı ve aktarılacak alıcı gruplarının belirtilmesi gerektiği”
+   Source: Kurul Kararı 2020/404: “kimlere aktarım yapılacağının muğlak bir şekilde veri sorumlusuna bırakıldığı”
+   Question for the lawyer: Alıcı gruplarının sayılması ve aktarım amacının amaç tablosuna atıfla belirtilmesinin Kurul uygulamasında yeterli sayılıp sayılmayacağına, yoksa alıcı grubu başına amaç eşlemesi gerekip gerekmediğine hukukçu karar vermelidir.
+   Recommendation: Her alıcı grubunu (ör. kargo/lojistik firmaları, ödeme kuruluşları, bilişim ve barındırma hizmeti sağlayıcıları, yetkili kamu kurumları) ve her grup için aktarım amacını ile aktarılan veri kategorilerini ayrı ayrı yazın; 'ticari faaliyetlerin yürütülmesi' gibi genel ifadeyi kaldırın.
+
+Sources
+https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5
+https://www.kvkk.gov.tr/Icerik/7112/2021-85
+https://www.kvkk.gov.tr/Icerik/6913/2020-404

@@ -1,0 +1,43 @@
+{
+ "document_id": "A_uyumlu",
+ "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+ "overall_assessment": "compliant",
+ "summary": "Aydınlatma metni KVKK md. 10/1 kapsamındaki beş unsuru da belirli ve eksiksiz biçimde karşılamaktadır. Veri sorumlusu kimliği, amaç-veri-hukuki sebep eşleşmesi, alıcı grupları ve aktarım amaçları, toplama yöntemi ve md. 11 hakları açıkça yer almaktadır. Herhangi bir bulgu tespit edilmemiştir.",
+ "element_checks": [
+  {
+   "element": "10/1-a",
+   "status": "present",
+   "evidence": "Unvan: Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.; adres, e-posta, KEP ve telefon belirtilmiş; temsilci atanmamıştır."
+  },
+  {
+   "element": "10/1-b",
+   "status": "present",
+   "evidence": "Üyelik hesabının oluşturulması, siparişlerin teslimi, fatura düzenlenmesi, hesap güvenliği, talep ve şikâyetlerin yanıtlanması, kampanya duyuruları."
+  },
+  {
+   "element": "10/1-c",
+   "status": "present",
+   "evidence": "Kargo ve lojistik firmaları | Siparişlerin teslim edilmesi ve iade ürünlerin teslim alınması (alıcı grubu ve amaç tablosu)."
+  },
+  {
+   "element": "10/1-ç",
+   "status": "present",
+   "evidence": "internet sitesi, mobil uygulama, çağrı merkezi ve e-posta kanallarıyla; kısmen otomatik / otomatik olmayan yollarla; Kanun md. 5/2-c, 5/2-ç, 5/2-f, 5/2-e, 5/1 hukuki sebepleri."
+  },
+  {
+   "element": "10/1-d",
+   "status": "present",
+   "evidence": "Kanun’un 11’inci maddesi uyarınca Şirket’e başvurarak; kişisel verilerinizin işlenip işlenmediğini öğrenme ... zararın giderilmesini talep etme haklarına sahipsiniz."
+  }
+ ],
+ "findings": [],
+ "penalty_exposure": {
+  "applicable": false,
+  "reference": "",
+  "range": "",
+  "source_url": "",
+  "note": "Md. 10 kapsamında eksiklik tespit edilmediğinden idari para cezası riski değerlendirilmemiştir."
+ },
+ "human_review_required": false,
+ "sources_consulted": []
+}

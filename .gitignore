@@ -1,0 +1,36 @@
+secrets/
+runs/_empty_cwd/
+scripts/node_modules/
+remote/logs/
+tools/bin/
+coded_mcp/**/.venv/
+coded_mcp/**/.env
+coded_mcp/**/.uipath/
+tools/server_stderr.log
+
+# Local tool configuration (not part of the project)
+.mcp.json
+AGENTS.md
+.agent/
+.cursor/
+.vscode/
+.idea/
+
+# Local agent test runner and its MCP client configs
+scripts/run_agent.py
+agent/mcp.json
+agent/mcp_coded.json
+
+# Raw run logs (keep only *.result.json fixtures and evaluation.md)
+runs/**/*.meta.json
+runs/**/*.stream.jsonl
+runs/**/*.report.md
+
+# Build output / caches
+orchestrator_tests/bin/
+orchestrator_tests/obj/
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+*.log

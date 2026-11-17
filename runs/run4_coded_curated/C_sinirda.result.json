@@ -1,0 +1,84 @@
+{
+ "document_id": "C_sinirda",
+ "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+ "overall_assessment": "needs_human_review",
+ "summary": "Metin 10/1-a, b, ç ve d unsurlarını somut biçimde karşılıyor; amaç-veri-hukuki sebep eşlemesi ve haklar eksiksiz. Tek sınırda nokta aktarım bölümü: alıcı grupları sayılmış ancak aktarım amacı genel (\"ticari faaliyetlerin yürütülmesi\") ve alıcı grupları geniş. Bu nokta hukukçu tarafından değerlendirilmelidir.",
+ "element_checks": [
+  {
+   "element": "10/1-a",
+   "status": "present",
+   "evidence": "Unvan: Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.; adres, e-posta, KEP, telefon; temsilci atanmamıştır"
+  },
+  {
+   "element": "10/1-b",
+   "status": "present",
+   "evidence": "Üyelik hesabının oluşturulması ve yönetilmesi; Siparişlerin alınması, teslimi, iade ve değişim işlemleri"
+  },
+  {
+   "element": "10/1-c",
+   "status": "deficient",
+   "evidence": "iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir"
+  },
+  {
+   "element": "10/1-ç",
+   "status": "present",
+   "evidence": "internet sitesi, mobil uygulama, çağrı merkezi ve e-posta kanalları aracılığıyla elektronik ortamda toplanmaktadır; Kanun md. 5/2-c"
+  },
+  {
+   "element": "10/1-d",
+   "status": "present",
+   "evidence": "Kanun’un 11’inci maddesi uyarınca Şirket’e başvurarak; ... zararın giderilmesini talep etme haklarına sahipsiniz"
+  }
+ ],
+ "findings": [
+  {
+   "id": "F1",
+   "element": "10/1-c",
+   "issue_type": "vague",
+   "severity": "low",
+   "title": "Aktarım alıcıları ve amaçları genel ifadelerle belirtilmiş",
+   "description": "Alıcı grupları sayılmış olsa da 'iş ortakları', 'tedarikçiler', 'hizmet alınan üçüncü kişiler' geniş kategorilerdir ve aktarım amacı 'amaçların gerçekleştirilmesi ve ticari faaliyetlerin yürütülmesi' şeklinde genel kalmıştır; hangi alıcı grubuna hangi veri/amaçla aktarım yapıldığı eşlenmemiştir. Kurul 2020/404 sayılı kararında kimlere aktarım yapılacağının muğlak bırakılmasını eleştirmiştir; ancak bu metin o karardaki 'uygun gördüğü diğer üçüncü kişiler' ifadesi kadar açık uçlu değildir. Yeterliliği bağlama bağlı olduğundan yargı çağrısıdır.",
+   "document_excerpt": "Kişisel verileriniz, yukarıda sayılan amaçların gerçekleştirilmesi ve Şirket’in ticari faaliyetlerinin yürütülmesi kapsamında, Kanun’un 8’inci maddesinde belirtilen şartlara uygun olarak iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir.",
+   "citations": [
+    {
+     "type": "kanun",
+     "reference": "6698 md. 10/1-c",
+     "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+     "supporting_quote": "c) İşlenen kişisel verilerin kimlere ve hangi amaçla aktarılabileceği,",
+     "retrieved_via": "system_prompt"
+    },
+    {
+     "type": "kurul_karari",
+     "reference": "Kurul Kararı 2020/404",
+     "source_url": "https://www.kvkk.gov.tr/Icerik/6913/2020-404",
+     "supporting_quote": "kimlere aktarım yapılacağının muğlak bir şekilde veri sorumlusuna bırakıldığı",
+     "retrieved_via": "get_kvkk_document_markdown"
+    }
+   ],
+   "confidence": 0.5,
+   "escalate": true,
+   "escalation_reason": "Alıcı gruplarının ve 'ticari faaliyetlerin yürütülmesi' şeklindeki aktarım amacının md. 10/1-c ve Tebliğ açısından yeterli olup olmadığına, alıcı grubu-amaç eşlemesi gerekip gerekmediğine hukukçu karar vermelidir.",
+   "recommendation": "Her alıcı grubu için aktarım amacını açıkça yazın (örn. kargo firmalarına teslimat, ödeme kuruluşlarına ödeme tahsili, yetkili kamu kurumlarına yasal yükümlülük) ve 'ticari faaliyetlerin yürütülmesi' gibi genel ifadeyi kaldırın."
+  }
+ ],
+ "penalty_exposure": {
+  "applicable": false,
+  "reference": "",
+  "range": "",
+  "source_url": "",
+  "note": "Kesin ihlal tespit edilmedi; yalnızca insan incelemesi gerektiren sınırda bir nokta var."
+ },
+ "human_review_required": true,
+ "sources_consulted": [
+  {
+   "tool": "check_government_servers_health",
+   "input": "",
+   "used_in_findings": false
+  },
+  {
+   "tool": "get_kvkk_document_markdown",
+   "input": "https://www.kvkk.gov.tr/Icerik/6913/2020-404 (page 2)",
+   "used_in_findings": true
+  }
+ ]
+}

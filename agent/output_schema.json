@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RegCheck KVKK md. 10 compliance result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "review_json",
+    "human_review_required",
+    "overall_assessment"
+  ],
+  "properties": {
+    "review_json": {
+      "type": "string",
+      "description": "The full review object (system prompt section 8, agent/review_schema.json) serialised as a JSON string. Must parse as valid JSON."
+    },
+    "human_review_required": {
+      "type": "boolean",
+      "description": "true if any finding has escalate=true. Must equal human_review_required inside review_json. The Maestro gateway routes on this field."
+    },
+    "overall_assessment": {
+      "type": "string",
+      "enum": [
+        "compliant",
+        "non_compliant",
+        "needs_human_review"
+      ],
+      "description": "Must equal overall_assessment inside review_json."
+    }
+  }
+}

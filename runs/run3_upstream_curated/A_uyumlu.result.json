@@ -1,0 +1,43 @@
+{
+ "document_id": "A_uyumlu",
+ "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+ "overall_assessment": "compliant",
+ "summary": "Aydınlatma metni KVKK md. 10/1 (a), (b), (c), (ç) ve (d) unsurlarının tümünü somut ve ayrıntılı biçimde karşılamaktadır. Amaçlar veri kategorileri ve md. 5 hukuki sebepleriyle eşleştirilmiş, alıcı grupları aktarım amaçlarıyla verilmiş, md. 11 hakları eksiksiz sayılmıştır. Sunulan araç listesinde sağlık kontrolü aracı bulunmadığından kontrol yapılamamış, değerlendirme yalnızca sistem talimatındaki Kanun metnine dayanmıştır; bulgu çıkmadığı için Kurul kararı okunmamıştır.",
+ "element_checks": [
+  {
+   "element": "10/1-a",
+   "status": "present",
+   "evidence": "Unvan: Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.; adres, e-posta, KEP ve telefon verilmiş; \"veri sorumlusu temsilcisi atanmamıştır\"."
+  },
+  {
+   "element": "10/1-b",
+   "status": "present",
+   "evidence": "İşleme amacı tablosu: üyelik hesabı, sipariş/teslim/iade, fatura, mesafeli satış kayıtları, hesap güvenliği, talep ve şikâyet yanıtlama, kampanya duyuruları; her biri veri kategorisiyle eşleştirilmiş."
+  },
+  {
+   "element": "10/1-c",
+   "status": "present",
+   "evidence": "Alıcı grubu / aktarım amacı tablosu: \"Kargo ve lojistik firmaları – Siparişlerin teslim edilmesi ve iade ürünlerin teslim alınması\" vb.; \"Kişisel verileriniz yurt dışına aktarılmamaktadır.\""
+  },
+  {
+   "element": "10/1-ç",
+   "status": "present",
+   "evidence": "Yöntem: internet sitesi, mobil uygulama, çağrı merkezi, e-posta; \"kısmen otomatik\" ve \"otomatik olmayan\" yollar belirtilmiş. Hukuki sebep: \"Kanun md. 5/2-c\", \"5/2-ç\", \"5/2-f\", \"5/2-e\", \"5/1: açık rıza\"."
+  },
+  {
+   "element": "10/1-d",
+   "status": "present",
+   "evidence": "Kanun’un 11’inci maddesi kapsamındaki tüm haklar (öğrenme, bilgi talep, düzeltme, silme, bildirim, itiraz, zararın giderilmesi) sayılmış; başvuru yolları verilmiş."
+  }
+ ],
+ "findings": [],
+ "penalty_exposure": {
+  "applicable": false,
+  "reference": "",
+  "range": "",
+  "source_url": "",
+  "note": "KVKK md. 10 kapsamında eksiklik tespit edilmediğinden md. 18/1-a idari para cezası riski değerlendirilmemiştir."
+ },
+ "human_review_required": false,
+ "sources_consulted": []
+}

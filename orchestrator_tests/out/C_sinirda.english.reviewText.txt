@@ -1,0 +1,20 @@
+RegCheck · Privacy notice review (KVKK Art. 10)
+Document: C_sinirda_aydinlatma_metni.docx
+Sender: ornek.gonderen@example.com
+Data controller: Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.
+Overall result: ⚠️ Lawyer review required
+Summary: The notice covers controller identity, purposes, collection method, legal bases (mapped per purpose) and the Art. 11 rights specifically. The only weakness is Art. 10(1)(c): recipients are described by broad groups and a generic transfer purpose. A lawyer should decide whether this is sufficient.
+
+Findings (1; 1 awaiting a lawyer's decision)
+1. Recipients described by broad groups with a generic transfer purpose   ⚠ Needs review
+   Element: 10/1-c (deficient) · Severity: Medium · Confidence: 0.55
+   Issue: The notice says data may be transferred to “iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere” for the stated purposes and “Şirket’in ticari faaliyetlerinin yürütülmesi”. It does not say which recipient group receives which data or for which specific purpose. Terms such as “iş ortakları” and “üçüncü kişiler” are broad, and the purpose is generic. Kurul Decision 2020/404 criticised recipients left vague and purposes not mapped to data categories. The processors named elsewhere (such as the payment institution) are not tied to a transfer purpose.
+   From the document: “Kişisel verileriniz, yukarıda sayılan amaçların gerçekleştirilmesi ve Şirket’in ticari faaliyetlerinin yürütülmesi kapsamında, Kanun’un 8’inci maddesinde belirtilen şartlara uygun olarak iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir.”
+   Source: 6698 md. 10/1-c: “İşlenen kişisel verilerin kimlere ve hangi amaçla aktarılabileceği”
+   Source: Kurul Kararı 2020/404: “kimlere aktarım yapılacağının muğlak bir şekilde veri sorumlusuna bırakıldığı”
+   Question for the lawyer: A lawyer must decide whether recipient groups such as “iş ortakları”, “tedarikçiler” and “hizmet aldığımız üçüncü kişiler”, with a generic “ticari faaliyetlerin yürütülmesi” purpose, meet Art. 10(1)(c). The alternative is that each recipient group and its transfer purpose must be spelled out.
+   Recommendation: List each recipient group (for example payment institutions, cargo and delivery companies, IT and hosting providers, authorised public bodies). For each group, state the transfer purpose and the data categories transferred. Drop the generic “ticari faaliyetlerin yürütülmesi” wording and replace “iş ortakları” and “üçüncü kişiler” with defined categories.
+
+Sources
+https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5
+https://www.kvkk.gov.tr/Icerik/6913/2020-404

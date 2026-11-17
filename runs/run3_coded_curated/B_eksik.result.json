@@ -1,0 +1,132 @@
+{
+ "document_id": "B_eksik",
+ "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+ "overall_assessment": "non_compliant",
+ "summary": "Aydınlatma metni veri sorumlusunun kimliğini, işleme amaçlarını ve alıcı gruplarını aktarım amaçlarıyla birlikte yeterince belirtmektedir. Ancak kişisel veri toplamanın yöntemi ve hukuki sebebi (md. 10/1-ç) ile md. 11'deki ilgili kişi hakları (md. 10/1-d) metinde hiç yer almamaktadır. Kaynak sunucuları sağlıklıdır; Kurul kararları okunarak atıf yapılmıştır.",
+ "element_checks": [
+  {
+   "element": "10/1-a",
+   "status": "present",
+   "evidence": "Unvan: Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.; adres, e-posta, KEP; \"veri sorumlusu temsilcisi atanmamıştır\""
+  },
+  {
+   "element": "10/1-b",
+   "status": "present",
+   "evidence": "İşleme amacı / Veri kategorisi tablosu (üyelik, sipariş, fatura, güvenlik, talep-şikâyet, kampanya)"
+  },
+  {
+   "element": "10/1-c",
+   "status": "present",
+   "evidence": "Alıcı grubu / Aktarım amacı tablosu (kargo, ödeme kuruluşları, mali müşavir, kamu kurumları)"
+  },
+  {
+   "element": "10/1-ç",
+   "status": "missing",
+   "evidence": ""
+  },
+  {
+   "element": "10/1-d",
+   "status": "missing",
+   "evidence": "Yalnızca: \"kvkk@kuzeyyildizi.example adresinden bizimle iletişime geçebilirsiniz\""
+  }
+ ],
+ "findings": [
+  {
+   "id": "F1",
+   "element": "10/1-ç",
+   "issue_type": "missing",
+   "severity": "high",
+   "title": "Veri toplama yöntemi ve hukuki sebep belirtilmemiş",
+   "description": "Metinde verilerin hangi kanaldan ve hangi yöntemle (tamamen/kısmen otomatik ya da otomatik olmayan) elde edildiği anlatılmamıştır. Ayrıca işleme faaliyetlerinin KVKK md. 5/6'daki hangi şarta dayandığı (sözleşmenin ifası, hukuki yükümlülük, meşru menfaat, açık rıza vb.) belirtilmemiştir. Amaç tablosundaki VUK/TTK/6502 atıfları faaliyet bazında bir hukuki sebep açıklaması yerine geçmez. Pazarlama için yalnızca \"açık rıza vermeniz hâlinde\" denmiştir.",
+   "document_excerpt": "Kişisel Verilerin İşlenme Amaçları tablosu ve \"Pazarlama: ilgi alanları ve iletişim tercihleri (yalnızca açık rıza vermeniz hâlinde)\"",
+   "citations": [
+    {
+     "type": "kanun",
+     "reference": "6698 md. 10/1-ç",
+     "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+     "supporting_quote": "ç) Kişisel veri toplamanın yöntemi ve hukuki sebebi,",
+     "retrieved_via": "system_prompt"
+    },
+    {
+     "type": "kurul_karari",
+     "reference": "Kurul Kararı 2023/938",
+     "source_url": "https://www.kvkk.gov.tr/Icerik/7767/2023-938",
+     "supporting_quote": "Aydınlatma yükümlülüğünün yerine getirilmesi esnasında hukuki sebebin açıkça belirtilmesi gerektiği",
+     "retrieved_via": "get_kvkk_document_markdown"
+    },
+    {
+     "type": "kurul_karari",
+     "reference": "Kurul Kararı 2023/938",
+     "source_url": "https://www.kvkk.gov.tr/Icerik/7767/2023-938",
+     "supporting_quote": "otomatik olmayan yöntemlerden hangisiyle elde edildiğinin açık bir şekilde belirtilmesi gerektiği",
+     "retrieved_via": "get_kvkk_document_markdown"
+    }
+   ],
+   "confidence": 0.92,
+   "escalate": false,
+   "escalation_reason": "",
+   "recommendation": "Toplama kanallarını (web sitesi/mobil uygulama üyelik formu, sipariş, müşteri hizmetleri) ve yöntemin otomatik olup olmadığını belirtin. Her işleme amacı için dayanılan md. 5/2 (veya md. 6) şartını açıkça eşleştirin; pazarlama için açık rızanın ayrı alındığını belirtin."
+  },
+  {
+   "id": "F2",
+   "element": "10/1-d",
+   "issue_type": "missing",
+   "severity": "high",
+   "title": "KVKK md. 11 kapsamındaki haklar sayılmamış",
+   "description": "Metinde ilgili kişinin md. 11'deki hakları (işlenip işlenmediğini öğrenme, bilgi talep etme, düzeltme, silme/yok etme, üçüncü kişilere bildirim, otomatik analize itiraz, zararın giderilmesi vb.) hiçbir şekilde sayılmamıştır. Yalnızca soru ve talepler için e-posta adresi verilmiştir; bu, hakların bildirilmesi yerine geçmez. Bu unsur için okunan Kurul kararlarında doğrudan bir değerlendirme bulunmadığından statü metnine ve karar içindeki md. 10 alıntısına dayanılmıştır.",
+   "document_excerpt": "Kişisel verilerinize ilişkin her türlü soru ve talebiniz için kvkk@kuzeyyildizi.example adresinden bizimle iletişime geçebilirsiniz.",
+   "citations": [
+    {
+     "type": "kanun",
+     "reference": "6698 md. 10/1-d",
+     "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+     "supporting_quote": "d) 11 inci maddede sayılan diğer hakları,",
+     "retrieved_via": "system_prompt"
+    },
+    {
+     "type": "kanun",
+     "reference": "6698 md. 11",
+     "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+     "supporting_quote": "Kişisel veri işlenip işlenmediğini öğrenme,",
+     "retrieved_via": "system_prompt"
+    },
+    {
+     "type": "kurul_karari",
+     "reference": "Kurul Kararı 2021/85",
+     "source_url": "https://www.kvkk.gov.tr/Icerik/7112/2021-85",
+     "supporting_quote": "d) 11 inci maddede sayılan diğer hakları, konusunda bilgi vermekle yükümlüdür.",
+     "retrieved_via": "get_kvkk_document_markdown"
+    }
+   ],
+   "confidence": 0.95,
+   "escalate": false,
+   "escalation_reason": "",
+   "recommendation": "Md. 11/1 (a)–(ğ) bentlerindeki tüm hakları metne ekleyin ve başvurunun nasıl yapılacağını (yazılı, KEP, e-posta) belirtin."
+  }
+ ],
+ "penalty_exposure": {
+  "applicable": true,
+  "reference": "6698 md. 18/1-a",
+  "range": "5.000 TL – 100.000 TL (Kanun metnindeki tutar)",
+  "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+  "note": "Tutarlar Kanun metnindeki tutarlardır; güncel (yeniden değerlenmiş) tutarlar hukukçu tarafından teyit edilmelidir."
+ },
+ "human_review_required": false,
+ "sources_consulted": [
+  {
+   "tool": "check_government_servers_health",
+   "input": "",
+   "used_in_findings": false
+  },
+  {
+   "tool": "get_kvkk_document_markdown",
+   "input": "https://www.kvkk.gov.tr/Icerik/7112/2021-85 (sayfa 1)",
+   "used_in_findings": true
+  },
+  {
+   "tool": "get_kvkk_document_markdown",
+   "input": "https://www.kvkk.gov.tr/Icerik/7767/2023-938 (sayfa 2)",
+   "used_in_findings": true
+  }
+ ]
+}

@@ -1,0 +1,89 @@
+isError: False
+{
+  "decisions": [
+    {
+      "title": "“Bir internet sitesinde yer alan çerezlere ilişkin aydınlatma ve açık rıza metinlerinin sunulmaması” hakkında Kişisel Verileri Koruma Kurulunun 23/12/2022 tarihli ve 2022/1358 sayılı Karar Özeti | Kişisel Verileri Koruma Kurumu",
+      "url": "https://www.kvkk.gov.tr/Icerik/7595/2022-1358",
+      "description": "Kullanıcılara sunulan kayıt formunun doldurulması sırasında işlenen kişisel verilerle ilgili olarak sitede aydınlatma metninin sunulmakta olduğu anlaşılmış olmakla birlikte söz konusu aydınlatma metninde tespit edilen eksikliklerin Kanun’un 10’uncu maddesi ile Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ’in ilgili hükümlerine uygun biçimde düzenlenerek sonucundan Kurula bilgi vermesi yönünde veri sorumlusunun talimatlandırılmasına",
+      "decision_id": "7595/2022-1358",
+      "publication_date": "23/12/2022",
+      "decision_number": "2022/1358"
+    },
+    {
+      "title": "\"Bir kamu kuruluşunun iştiraki hakkındaki kişisel verilerin hukuka aykırı işlenmesi, amacına aykırı kullanılması ve üçüncü taraflara aktarılması ile aydınlatma metninin hukuka aykırılığı konulu şikâyet” hakkında Kişisel Verileri Koruma Kurulunun 22/02/2024 Tarihli ve 2024/284 Sayılı Karar Özeti | Kişisel Verileri Koruma Kurumu",
+      "url": "https://www.kvkk.gov.tr/Icerik/8877/2024-284",
+      "description": "Veri sorumlusunun muhafaza ettiği e-posta içeriklerine yönelik <strong>aydınlatma metninde</strong> bilgi vermediği, bununla birlikte taahhütname metninde içeriğin denetleneceğine dair ifadelere yer verdiği, ancak taahhütname metninin Kanun’un 10’uncu maddesi uyarınca bir metin olmadığı, ...",
+      "decision_id": "8877/2024-284",
+      "publication_date": "22/02/2024",
+      "decision_number": "2024/284"
+    },
+    {
+      "title": "“İşverenin, işçisine ait kişisel verileri ve özel nitelikli kişisel verileri; aydınlatma yükümlülüğünü yerine getirmeden ve hukuka aykırı işlemesi” hakkında Kişisel Verileri Koruma Kurulunun 20/05/2020 tarihli ve 2020/404 sayılı Karar Özeti | Kişisel Verileri Koruma Kurumu",
+      "url": "https://www.kvkk.gov.tr/Icerik/6913/2020-404",
+      "description": "Veri sorumlusu tarafından Kuruma gönderilen savunma yazısında çalışan ve aday çalışanlarının her birine KVKK Aydınlatma Metni ve Açık Rıza metninin tebliğ edildiği ve çalışanların bu metinleri imza karşılığı olarak veri sorumlusuna teslim ettiği ifade edilmekle birlikte yazıları ekinde aydınlatma metnine yer verilmediği, öte yandan ilgili kişinin şikayet dilekçesi ekinde yer verilen “Kişisel Verilerin İşlenmesine İlişkin Çalışan Muvafakatnamesi”nin hem aydınlatma metni hem de açık rıza metni olarak düzenlendiği kabul edildiğinde; Tebliğin",
+      "decision_id": "6913/2020-404",
+      "publication_date": "20/05/2020",
+      "decision_number": "2020/404"
+    },
+    {
+      "title": "“Veri sorumlusunun internet sitesinde aydınlatma yükümlülüğünü usulüne uygun olarak yerine getirmemesi ve sunduğu hizmeti açık rıza şartına bağlaması hakkında” Kişisel Verileri Koruma Kurulunun 15/06/2023 Tarihli ve 2023/1041 Sayılı Karar Özeti | Kişisel Verileri Koruma Kurumu",
+      "url": "https://www.kvkk.gov.tr/Icerik/7768/2023-1041",
+      "description": "Kuruma intikal eden şikayette özetle; ilgili kişinin tetkik ve takip için vücuda takılan şeker ölçüm cihazlarından almak istediği, bu özellikleri karşılayan ve Veri Sorumlusu tarafından satışa sunulan ürünün, gizlilik ve aydınlatma metinlerinde işaretlenmek üzere boş bırakılan alanlar doldurulmadan satışının yapılmadığı veya internet sitesine üyelik işleminin gerçekleştirilemediği, ürünün satın alınabilmesi için söz konusu metinlerde bulunan alanların doldurulmasının zorunlu kılındığı, özel sağlık bilgilerinin ticari ve pazarlama amaçlı faaliyetlerde kullanılması ve bu bilgiler paylaşılmaksızın ürünün satılmamasının hastanın teşhis ve tedavi hakkını kısıtladığı ve hiçbir kişisel verisinin yurt dışına aktarılmasını kabul etmediği belirtilerek gereğinin yapılması talep edilmiştir.",
+      "decision_id": "7768/2023-1041",
+      "publication_date": "15/06/2023",
+      "decision_number": "2023/1041"
+    },
+    {
+      "title": "\"Veri sorumlusu tarafından güvenlik kamerasıyla ses ve görüntü kaydı alınması, aydınlatma yükümlülüğünün yerine getirilmemesi, internet sitesinde çerezler vasıtasıyla kişisel verilerin işlenmesi ve hizmetin ön şartı olarak reklam ve pazarlama amaçlı açık rıza alınmasına ilişkin şikâyet” hakkında Kişisel Verileri Koruma Kurulunun 08/08/2024 Tarihli ve 2024/1361 Sayılı Karar Özeti | Kişisel Verileri Koruma Kurumu",
+      "url": "https://www.kvkk.gov.tr/Icerik/8884/2024-1361",
+      "description": "Kurumunuzdan tarafıma yapılacak reklam, promosyon ve çeşitli kampanyalar dahil olmak üzere her türlü bilgilendirme amacıyla kullanılmasına muvafakat ettiğimi bildiririm.” ifadelerine yer verildiği, ancak herhangi bir <strong>aydınlatma metnine</strong> yer verilmediği,",
+      "decision_id": "8884/2024-1361",
+      "publication_date": "08/08/2024",
+      "decision_number": "2024/1361"
+    },
+    {
+      "title": "“İlgili kişinin Kanunun 11 nci maddesi kapsamındaki başvurusuna veri sorumlusu tarafından verilen cevabın yeterli bulunmaması” hakkında Kişisel Verileri Koruma Kurulunun 03/02/2021 tarihli ve 2021/85 sayılı Karar Özeti | Kişisel Verileri Koruma Kurumu",
+      "url": "https://www.kvkk.gov.tr/Icerik/7112/2021-85",
+      "description": "Bu anlamda, veri sorumlusunun ilgili kişilere, kişisel verilerinin en geç elde edilmesi esnasında, bahse konu işlemler bazında, “belirli ve açık” bir aydınlatmada bulunmadığı ve Aydınlatma Metninde eksiklikler bulunduğu; bu sebeplerle de Tebliğin 5 inci maddesinin (1) numaralı fıkrasının; “Aydınlatma yükümlülüğü kapsamında açıklanacak kişisel veri işleme amacının belirli, açık ve meşru olması gerekir.",
+      "decision_id": "7112/2021-85",
+      "publication_date": "03/02/2021",
+      "decision_number": "2021/85"
+    },
+    {
+      "title": "“Kişisel verilerin 108 sayılı Sözleşme dayanak gösterilerek yurt dışına aktarılması hakkında” Kişisel Verileri Koruma Kurulunun 22/07/2020 tarih ve 2020/559 sayılı Karar Özeti | Kişisel Verileri Koruma Kurumu",
+      "url": "https://www.kvkk.gov.tr/Icerik/6790/2020-559",
+      "description": "Aydınlatma Tebliği’nin anılan maddesinin (j) bendinde; “<strong>Aydınlatma yükümlülüğü yerine getirilirken eksik, ilgili kişileri yanıltıcı ve yanlış bilgilere yer verilmemelidir</strong>.” hükmüne yer verilmiştir. Veri sorumlusunun aydınlatma metninde ise, kişisel verilerin ticari ...",
+      "decision_id": "6790/2020-559",
+      "publication_date": "22/07/2020",
+      "decision_number": "2020/559"
+    },
+    {
+      "title": "“Veri sorumlusu tarafından aydınlatma yükümlülüğü ve açık rıza onayı alınması süreçlerinin ayrı ayrı yerine getirilmesi gerektiği ile ilgili” Kişisel Verileri Koruma Kurulunun 26/07/2018 tarihli ve 2018/90 sayılı Karar Özeti | Kişisel Verileri Koruma Kurumu",
+      "url": "https://www.kvkk.gov.tr/Icerik/5420/2018-90",
+      "description": "Açık rıza alınmasında amaç ise, veri sorumlusu tarafından kişisel verilerinin işlenmesinin hukuki bir gerekçeye dayandırılmasıdır. Bu sebeple, ilgili kişi aydınlatma metni sayesinde kişisel veri işleme faaliyeti ile ilgili olarak bilgi edinmiş olmakla birlikte, söz konusu metinde yazılanlara açık rıza vermek zorunda değildir.",
+      "decision_id": "5420/2018-90",
+      "publication_date": "26/07/2018",
+      "decision_number": "2018/90"
+    },
+    {
+      "title": "Bir Banka Tarafından Kurul Kararı ile Verilen Talimatların Gereğinin Yerine Getirilmemesi Hakkında Kişisel Verileri Koruma Kurulu’nun 08/10/2020 Tarihli ve 2020/766 Sayılı Karar Özeti | Kişisel Verileri Koruma Kurumu",
+      "url": "https://www.kvkk.gov.tr/Icerik/6849/2020-766",
+      "description": "Ayrıca veri sorumlusu tarafından Kuruma iletilen cevap metninde Kararda yer alan “… aydınlatmanın kişisel verilerin elde edilmesi sırasında ve faaliyet bazlı olarak yerine getirilmesi gerektiği…” talimatına ilişkin herhangi bir ifadeye ve tevsik edici belgeye yer verilmediği görülmüş olup internet sayfasında yapılan incelemede kredi kartı başvurusu yapılmak istenildiğinde “HEMEN BAŞVUR” butonu seçildiğinde yönlendirilen sayfada “Kişisel Verilerin Korunması Kanunu kapsamında hazırlanan Aydınlatma Metni’ni okudum.” ifadesinin yer aldığı, aydın",
+      "decision_id": "6849/2020-766",
+      "publication_date": "08/10/2020",
+      "decision_number": "2020/766"
+    },
+    {
+      "title": "“Veri sorumlusu tarafından iş yerinde güvenlik kamerası vasıtasıyla ve işe giriş-çıkışlarda yüz tanıma sistemi kullanılması suretiyle kişisel verilerin hukuka aykırı işlenmesi” hakkında Kişisel Verileri Koruma Kurulunun 04/08/2022 tarih ve 2022/797 sayılı Karar Özeti | Kişisel Verileri Koruma Kurumu",
+      "url": "https://www.kvkk.gov.tr/Icerik/7434/2022-797",
+      "description": "İlgili kişiler tarafından, ilgili kişilere açık rızalarının olduğuna ilişkin genel bir aydınlatma metni imzalatıldığı, bu metnin açık rızanın unsurlarını taşımadığı, aydınlatma yapılması ve açık rıza alınması işlemlerinin ayrı ayrı yerine getirilmesi şartına uymadığı iddia edilmekte olup veri sorumlusunun Açık Rıza ve Aydınlatma Metni olarak iki ayrı metninin bulunduğu, bu kapsamda, veri sorumlusu ve ilgili kişiler tarafından Kuruma iletilen ‘Kişisel Verilerin Korunması Kanunu Çalışan ve Çalışan Adayı Açık Rıza Metni’nin incele",
+      "decision_id": "7434/2022-797",
+      "publication_date": "04/08/2022",
+      "decision_number": "2022/797"
+    }
+  ],
+  "total_results": null,
+  "page": 1,
+  "pageSize": 10,
+  "query": "site:kvkk.gov.tr \"karar özeti\" +\"aydınlatma metni\" eksik"
+}

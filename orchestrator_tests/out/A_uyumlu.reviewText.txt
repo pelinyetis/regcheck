@@ -1,0 +1,10 @@
+RegCheck · Privacy notice review (KVKK Art. 10)
+Document: A_uyumlu_aydinlatma_metni.docx
+Sender: ornek.gonderen@example.com
+Data controller: Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.
+Overall result: ✅ Compliant
+Summary: Belge KVKK md. 10/1 kapsamındaki beş unsurun tamamını somut biçimde karşılamaktadır. Veri sorumlusu kimliği, amaç ve hukuki sebep eşleşmesi, alıcı grupları ve aktarım amaçları, toplama yöntemi ve md. 11 hakları açıkça yer almaktadır. Herhangi bir bulgu tespit edilmemiştir; sunucular sağlıklıdır.
+
+Findings: none.
+Sources
+—

@@ -1,0 +1,26 @@
+[project]
+name = "regcheck-mcp-min"
+version = "0.0.2"
+description = "RegCheck coded MCP server - the 3 tools of the KVKK agent - vendored mevzuat-mcp and yargi-mcp"
+authors = [{ name = "RegCheck Demo" }]
+requires-python = ">=3.11"
+dependencies = [
+    # UiPath runtime. uipath-mcp 0.3.2 pins mcp==1.30.0; we pin it explicitly so it can't drift.
+    "uipath-mcp==0.3.2",
+    "uipath>=2.14.41,<2.15.0",
+    "mcp==1.30.0",
+    # Needed by the vendored mevzuat-mcp 0.3.0 and yargi-mcp 0.2.2 code (versions as in their pyprojects).
+    # The KVKK module needs nothing beyond these (httpx, bs4, markitdown, pydantic).
+    "httpx>=0.28.1",
+    "beautifulsoup4>=4.12.0",
+    "lxml>=4.9.0",
+    "markitdown[pdf]==0.1.9",
+    # markitdown imports magika (file-type detection), which needs onnxruntime. magika < 1.0.2 caps
+    # onnxruntime at 1.20.1 on Windows, and that cap leaked into the universal uv.lock, so Linux
+    # serverless (CPython 3.14) got 1.20.1, which has no cp314 wheel. magika >= 1.0.2 requires
+    # onnxruntime >= 1.24.1 on 3.14 (cp314 wheels exist).
+    "magika>=1.0.2,<2",
+    "pydantic>=2.11.4",
+]
+# Deliberately NOT included: playwright (needs a browser; see server.py), mistralai (OCR for
+# CB Kararı/Genelge only), fastmcp (we use mcp's built-in FastMCP).

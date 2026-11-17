@@ -1,0 +1,45 @@
+{
+ "result": {
+  "document_id": "A_uyumlu",
+  "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+  "overall_assessment": "compliant",
+  "summary": "The notice covers all five Art. 10(1) elements specifically: controller identity and contact details, purposes mapped to data categories and legal bases, recipient groups with transfer purposes, collection methods, and the full list of Art. 11 rights. No deficiencies were identified.",
+  "element_checks": [
+   {
+    "element": "10/1-a",
+    "status": "present",
+    "evidence": "“Unvan | Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.”; address, e-mail, KEP and phone listed; “veri sorumlusu temsilcisi atanmamıştır”"
+   },
+   {
+    "element": "10/1-b",
+    "status": "present",
+    "evidence": "“Üyelik hesabının oluşturulması ve yönetilmesi”; “Hesap güvenliğinin sağlanması ve dolandırıcılığın önlenmesi” – purposes mapped to data categories"
+   },
+   {
+    "element": "10/1-c",
+    "status": "present",
+    "evidence": "“Kargo ve lojistik firmaları | Siparişlerin teslim edilmesi ve iade ürünlerin teslim alınması”; each recipient group paired with a transfer purpose"
+   },
+   {
+    "element": "10/1-ç",
+    "status": "present",
+    "evidence": "“internet sitesi, Kuzey Yıldızı mobil uygulaması, müşteri hizmetleri çağrı merkezi ve e-posta kanalları aracılığıyla elektronik ortamda toplanmaktadır”; “Kanun md. 5/2-c: bir sözleşmenin kurulması veya ifasıyla doğrudan ilgili olması”"
+   },
+   {
+    "element": "10/1-d",
+    "status": "present",
+    "evidence": "“Kanun’un 11’inci maddesi uyarınca Şirket’e başvurarak; kişisel verilerinizin işlenip işlenmediğini öğrenme” – all nine rights listed with application channels"
+   }
+  ],
+  "findings": [],
+  "penalty_exposure": {
+   "applicable": false,
+   "reference": "",
+   "range": "",
+   "source_url": "",
+   "note": "No Art. 10 deficiency identified; no administrative fine exposure under Art. 18/1-a arises from this review."
+  },
+  "human_review_required": false,
+  "sources_consulted": []
+ }
+}

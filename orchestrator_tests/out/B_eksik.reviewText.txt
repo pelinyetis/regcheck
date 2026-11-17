@@ -1,0 +1,30 @@
+RegCheck · Privacy notice review (KVKK Art. 10)
+Document: B_eksik_aydinlatma_metni.docx
+Sender: ornek.gonderen@example.com
+Data controller: Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.
+Overall result: ❌ Non-compliant
+Summary: Metinde veri sorumlusunun kimliği, işleme amaçları ve alıcı grupları ile aktarım amaçları yeterli biçimde yer almaktadır. Ancak kişisel veri toplamanın yöntemi ve hukuki sebebi (md. 10/1-ç) ile ilgili kişinin md. 11 kapsamındaki hakları (md. 10/1-d) metinde hiç yer almamaktadır. Kaynak sunucuları sağlıklıydı; bu iki eksiklik nedeniyle metin uyumsuz değerlendirilmiştir.
+
+Findings (2; 0 awaiting a lawyer's decision)
+1. Veri toplamanın yöntemi ve hukuki sebebi belirtilmemiş
+   Element: 10/1-ç (missing) · Severity: High · Confidence: 0.95
+   Issue: Metinde kişisel verilerin hangi kanaldan (web sitesi, üyelik formu, mobil uygulama vb.) ve otomatik/otomatik olmayan yolla toplandığı belirtilmemiştir. Ayrıca işleme faaliyetlerinin dayandığı md. 5/6 hukuki sebepleri (sözleşmenin ifası, kanuni yükümlülük, meşru menfaat, açık rıza vb.) açıkça yazılmamıştır. Amaç tablosunda yer alan VUK/TTK/6502 atıfları ve pazarlama için açık rıza ibaresi hukuki sebebin yerine geçmez. Kurul Kararı 2021/85, md. 10/1-ç'yi ve Tebliğ md. 4'ü anmaktadır; ancak okunan sayfada Tebliğ 5/1-(h) kısmı kesilmiş olduğundan karar yalnızca md. 10 metni açısından destek olarak kullanılmıştır.
+   From the document: “Bu metin, Kanun’un 10’uncu maddesi uyarınca hazırlanmıştır. Açık rıza gerektiren işlemeler için ayrı bir Açık Rıza Metni sunulmaktadır.”
+   Source: 6698 md. 10/1-ç: “ç) Kişisel veri toplamanın yöntemi ve hukuki sebebi,”
+   Source: Kurul Kararı 2021/85: “ç) Kişisel veri toplamanın yöntemi ve hukuki sebebi, d) 11 inci maddede sayılan diğer hakları, konusunda bilgi vermekle yükümlüdür.”
+   Recommendation: Toplama yöntemini (kanal ve otomatik/otomatik olmayan) belirten bir bölüm ekleyin. Her işleme amacı için dayanılan md. 5/2 veya md. 6 şartını açıkça yazın (ör. sözleşmenin ifası, kanuni yükümlülük, meşru menfaat, pazarlama için açık rıza).
+
+2. İlgili kişinin md. 11 kapsamındaki hakları sayılmamış
+   Element: 10/1-d (missing) · Severity: High · Confidence: 0.95
+   Issue: Metinde ilgili kişinin md. 11'de sayılan hakları (bilgi talep etme, düzeltme, silme, itiraz, zararın giderilmesi vb.) ve bunlara ilişkin başvuru yolu anlatılmamıştır. Yalnızca e-posta adresi üzerinden soru ve taleplerin iletilebileceği belirtilmiştir; iletişim adresi tek başına hakların bildirilmesi yerine geçmez. Konuyla ilgili Kurul Kararı 2021/85'te md. 10/1-d metni yer almaktadır.
+   From the document: “Kişisel verilerinize ilişkin her türlü soru ve talebiniz için kvkk@kuzeyyildizi.example adresinden bizimle iletişime geçebilirsiniz.”
+   Source: 6698 md. 10/1-d: “d) 11 inci maddede sayılan diğer hakları,”
+   Source: 6698 md. 11: “Kişisel veri işlenip işlenmediğini öğrenme,”
+   Source: Kurul Kararı 2021/85: “d) 11 inci maddede sayılan diğer hakları, konusunda bilgi vermekle yükümlüdür.”
+   Recommendation: Md. 11/1-(a)–(ğ) bentlerindeki hakların tamamını metne ekleyin ve başvuruların nasıl yapılacağını (yazılı, KEP, e-posta vb.) belirtin.
+
+Administrative fine exposure: 6698 md. 18/1-a: 5.000 TL – 100.000 TL (Kanun metnindeki tutar)
+
+Sources
+https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5
+https://www.kvkk.gov.tr/Icerik/7112/2021-85

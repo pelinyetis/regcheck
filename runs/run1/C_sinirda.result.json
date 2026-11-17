@@ -1,0 +1,101 @@
+{
+ "document_id": "C_sinirda",
+ "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+ "overall_assessment": "needs_human_review",
+ "summary": "Metin; veri sorumlusu, amaçlar, toplama yöntemi/hukuki sebep ve md. 11 haklarını ayrıntılı ve belirli biçimde veriyor. Tek sınırda nokta aktarım bölümüdür: alıcı grupları geniş (\"iş ortakları, tedarikçiler, hizmet alınan üçüncü kişiler\") ve aktarım amacı \"ticari faaliyetlerin yürütülmesi\" gibi genel ifadelerle verilmiştir. Bu nokta bir hukukçu tarafından değerlendirilmelidir. Kaynaklar erişilebilirdi.",
+ "element_checks": [
+  {
+   "element": "10/1-a",
+   "status": "present",
+   "evidence": "Unvan: Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.; adres, e-posta, KEP, telefon; temsilci atanmamıştır."
+  },
+  {
+   "element": "10/1-b",
+   "status": "present",
+   "evidence": "Kişisel Verilerin İşlenme Amaçları ve Hukuki Sebepleri tablosu: üyelik, sipariş, fatura, hesap güvenliği, talep/şikâyet, kampanya."
+  },
+  {
+   "element": "10/1-c",
+   "status": "deficient",
+   "evidence": "iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir."
+  },
+  {
+   "element": "10/1-ç",
+   "status": "present",
+   "evidence": "Üyelik ve sipariş formları ile sistem kayıtları aracılığıyla toplanan veriler kısmen otomatik yollarla...; Kanun md. 5/2-c, 5/2-ç, 5/2-f"
+  },
+  {
+   "element": "10/1-d",
+   "status": "present",
+   "evidence": "Kanun’un 11’inci maddesi uyarınca Şirket’e başvurarak; ... zararın giderilmesini talep etme haklarına sahipsiniz."
+  }
+ ],
+ "findings": [
+  {
+   "id": "F1",
+   "element": "10/1-c",
+   "issue_type": "vague",
+   "severity": "low",
+   "title": "Aktarım alıcı grupları ve aktarım amacı genel ifadelerle belirtilmiş",
+   "description": "Aktarım bölümünde alıcılar \"iş ortakları, tedarikçiler, hizmet alınan üçüncü kişiler\" olarak sayılmış; aktarım amacı ise alıcı bazında eşleştirilmeden \"yukarıda sayılan amaçlar ve ticari faaliyetlerin yürütülmesi\" şeklinde verilmiştir. Kurul Kararı 2023/938'de aktarım amacı ve alıcı gruplarının belirtilmesi ile genel/muğlak ifadelerden kaçınılması Tebliğ hükmü olarak anılmaktadır. Ancak 'iş ortağı' ve 'tedarikçi' gibi kategoriler pratikte alıcı grubu sayılabileceğinden yeterlilik bağlama bağlıdır; bu nedenle kesin ihlal değil sınırda değerlendirmedir.",
+   "document_excerpt": "Kişisel verileriniz, yukarıda sayılan amaçların gerçekleştirilmesi ve Şirket’in ticari faaliyetlerinin yürütülmesi kapsamında, Kanun’un 8’inci maddesinde belirtilen şartlara uygun olarak iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir.",
+   "citations": [
+    {
+     "type": "kanun",
+     "reference": "6698 md. 10/1-c",
+     "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+     "supporting_quote": "c) İşlenen kişisel verilerin kimlere ve hangi amaçla aktarılabileceği,",
+     "retrieved_via": "system_prompt"
+    },
+    {
+     "type": "kurul_karari",
+     "reference": "Kurul Kararı 2023/938",
+     "source_url": "https://www.kvkk.gov.tr/Icerik/7767/2023-938",
+     "supporting_quote": "(ı) bendinde Aydınlatma yükümlülüğü kapsamında, kişisel verilerin aktarılma amacı ve aktarılacak alıcı gruplarının belirtilmesi gerektiği",
+     "retrieved_via": "get_kvkk_document_markdown"
+    },
+    {
+     "type": "kurul_karari",
+     "reference": "Kurul Kararı 2023/938",
+     "source_url": "https://www.kvkk.gov.tr/Icerik/7767/2023-938",
+     "supporting_quote": "genel nitelikte ve muğlak ifadelere yer verilmemesi ve gündeme gelmesi muhtemel başka amaçlar için kişisel verilerin işlenebileceği kanaatini uyandıran ifadelerin kullanılmaması gerektiği",
+     "retrieved_via": "get_kvkk_document_markdown"
+    }
+   ],
+   "confidence": 0.55,
+   "escalate": true,
+   "escalation_reason": "Hukukçu, 'iş ortakları/tedarikçiler/hizmet alınan üçüncü kişiler' ifadelerinin yeterince belirli alıcı grubu sayılıp sayılmayacağına ve 'ticari faaliyetlerin yürütülmesi' ifadesinin aktarım amacı olarak muğlak kabul edilip edilmeyeceğine karar vermelidir.",
+   "recommendation": "Alıcı gruplarını somutlaştırın (ör. kargo/lojistik firmaları, ödeme kuruluşları, bilgi teknolojileri hizmet sağlayıcıları, yetkili kamu kurumları) ve her grup için aktarım amacını ayrı belirtin; 'ticari faaliyetlerin yürütülmesi' gibi genel ifadeyi kaldırın."
+  }
+ ],
+ "penalty_exposure": {
+  "applicable": false,
+  "reference": "",
+  "range": "",
+  "source_url": "",
+  "note": "Kesin (güven ≥ 0,7) bir md. 10 ihlali tespit edilmedi; yalnızca insan incelemesi gerektiren sınırda bir nokta var."
+ },
+ "human_review_required": true,
+ "sources_consulted": [
+  {
+   "tool": "check_government_servers_health",
+   "input": "",
+   "used_in_findings": false
+  },
+  {
+   "tool": "search_kvkk_decisions",
+   "input": "\"aydınlatma yükümlülüğü\" \"alıcı grupları\" aktarım amacı",
+   "used_in_findings": true
+  },
+  {
+   "tool": "get_kvkk_document_markdown",
+   "input": "https://www.kvkk.gov.tr/Icerik/7767/2023-938 (sayfa 1)",
+   "used_in_findings": false
+  },
+  {
+   "tool": "get_kvkk_document_markdown",
+   "input": "https://www.kvkk.gov.tr/Icerik/7767/2023-938 (sayfa 2)",
+   "used_in_findings": true
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+KURGUSAL ÖRNEK BELGE – yalnızca demo amaçlıdır; gerçek bir şirkete ait değildir.
+KUZEY YILDIZI KİTAP VE KIRTASİYE TİCARET A.Ş.
+Müşteri ve Üyelik Süreçlerine İlişkin Kişisel Verilerin İşlenmesi Aydınlatma Metni
+Sürüm 1.0 – Yürürlük tarihi: 01.10.2026
+1. Veri Sorumlusu
+6698 sayılı Kişisel Verilerin Korunması Kanunu (“Kanun”) uyarınca, kişisel verileriniz veri sorumlusu sıfatıyla Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş. (“Şirket”) tarafından aşağıda açıklanan kapsamda işlenecektir.
+| Bilgi | Değer |
+| Unvan | Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş. |
+| MERSİS No | 0000-0000-0000-0001 (kurgusal) |
+| Adres | Örnek Mahallesi, Kurgu Sokak No: 7, 34000 Kadıköy/İstanbul |
+| E-posta | kvkk@kuzeyyildizi.example |
+| KEP adresi | kuzeyyildizi@kep.example |
+| Telefon | 0 (212) 000 00 00 |
+Şirket Türkiye’de yerleşik olduğundan veri sorumlusu temsilcisi atanmamıştır.
+2. İşlenen Kişisel Veri Kategorileri
+- Kimlik: ad, soyad.
+- İletişim: e-posta adresi, cep telefonu numarası, teslimat ve fatura adresi.
+- Müşteri işlem: sipariş geçmişi, sepet içeriği, iade ve değişim talepleri, müşteri hizmetleri yazışmaları.
+- Finans: fatura bilgileri. Kart bilgileriniz Şirket tarafından saklanmaz; ödeme kuruluşu tarafından işlenir.
+- İşlem güvenliği: IP adresi, oturum açma ve kapama kayıtları.
+- Pazarlama: ilgi alanları ve iletişim tercihleri (yalnızca açık rıza vermeniz hâlinde).
+3. Kişisel Verilerin İşlenme Amaçları ve Hukuki Sebepleri
+Kişisel verileriniz aşağıdaki amaçlarla ve her bir amacın karşısında belirtilen hukuki sebebe dayanılarak işlenmektedir:
+| İşleme amacı | Veri kategorisi | Hukuki sebep |
+| Üyelik hesabının oluşturulması ve yönetilmesi | Kimlik, İletişim | Kanun md. 5/2-c: bir sözleşmenin kurulması veya ifasıyla doğrudan ilgili olması |
+| Siparişlerin alınması, teslimi, iade ve değişim işlemleri | Kimlik, İletişim, Müşteri işlem | Kanun md. 5/2-c |
+| Fatura düzenlenmesi ve ticari defter/belgelerin saklanması (213 sayılı VUK, 6102 sayılı TTK) | Kimlik, Finans, Müşteri işlem | Kanun md. 5/2-ç: veri sorumlusunun hukuki yükümlülüğü |
+| Mesafeli satış kapsamında ön bilgilendirme ve cayma hakkı kayıtlarının tutulması (6502 sayılı Kanun) | Kimlik, İletişim, Müşteri işlem | Kanun md. 5/2-ç |
+| Hesap güvenliğinin sağlanması ve dolandırıcılığın önlenmesi | İşlem güvenliği | Kanun md. 5/2-f: veri sorumlusunun meşru menfaati |
+| Talep ve şikâyetlerin yanıtlanması | Kimlik, İletişim, Müşteri işlem | Kanun md. 5/2-c ve 5/2-e: bir hakkın tesisi, kullanılması veya korunması |
+| Kampanya duyuruları ve kişiselleştirilmiş kitap önerileri gönderilmesi | İletişim, Pazarlama | Kanun md. 5/1: açık rıza (ayrı Açık Rıza Metni ile alınır; rıza vermemeniz alışverişinizi etkilemez) |
+4. Kişisel Veri Toplamanın Yöntemi
+Kişisel verileriniz; www.kuzeyyildizi.example internet sitesi, Kuzey Yıldızı mobil uygulaması, müşteri hizmetleri çağrı merkezi ve e-posta kanalları aracılığıyla elektronik ortamda toplanmaktadır. Üyelik ve sipariş formları ile sistem kayıtları aracılığıyla toplanan veriler kısmen otomatik yollarla; çağrı merkezi görüşmelerinde sözlü olarak iletilen veriler ise müşteri temsilcisi tarafından sisteme girilerek otomatik olmayan yollarla elde edilmektedir.
+Çerezler aracılığıyla yapılan işlemeler hakkında ayrıca Çerez Aydınlatma Metni sunulmaktadır.
+5. Kişisel Verilerin Aktarılması
+Kişisel verileriniz, yukarıda sayılan amaçların gerçekleştirilmesi ve Şirket’in ticari faaliyetlerinin yürütülmesi kapsamında, Kanun’un 8’inci maddesinde belirtilen şartlara uygun olarak iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir.
+Kişisel verileriniz yurt dışına aktarılmamaktadır.
+6. Kanun’un 11’inci Maddesi Kapsamındaki Haklarınız
+Kanun’un 11’inci maddesi uyarınca Şirket’e başvurarak;
+- kişisel verilerinizin işlenip işlenmediğini öğrenme,
+- kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme,
+- kişisel verilerinizin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,
+- yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçüncü kişileri bilme,
+- kişisel verilerinizin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme,
+- Kanun’un 7’nci maddesinde öngörülen şartlar çerçevesinde kişisel verilerinizin silinmesini veya yok edilmesini isteme,
+- düzeltme, silme veya yok etme işlemlerinin kişisel verilerinizin aktarıldığı üçüncü kişilere bildirilmesini isteme,
+- işlenen verilerinizin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme,
+- kişisel verilerinizin kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme
+haklarına sahipsiniz.
+Taleplerinizi, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ’e uygun olarak yazılı şekilde Örnek Mahallesi, Kurgu Sokak No: 7, 34000 Kadıköy/İstanbul adresine, kuzeyyildizi@kep.example KEP adresine veya Şirket sistemlerinde kayıtlı e-posta adresinizden kvkk@kuzeyyildizi.example adresine iletebilirsiniz. Başvurunuz, talebin niteliğine göre en geç otuz gün içinde ücretsiz olarak sonuçlandırılır; işlemin ayrıca bir maliyet gerektirmesi hâlinde Kurulca belirlenen tarifedeki ücret alınabilir.
+Bu metin, Kanun’un 10’uncu maddesi uyarınca hazırlanmıştır. Açık rıza gerektiren işlemeler için ayrı bir Açık Rıza Metni sunulmaktadır.

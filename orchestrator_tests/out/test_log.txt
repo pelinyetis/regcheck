@@ -1,0 +1,112 @@
+== 1. ExtractDocumentText
+PASS A_uyumlu_aydinlatma_metni.docx: 5852 chars, identical to scripts/docx_to_text.py output (the agent's tested input)
+PASS B_eksik_aydinlatma_metni.docx: 3356 chars, identical to scripts/docx_to_text.py output (the agent's tested input)
+PASS C_sinirda_aydinlatma_metni.docx: 5371 chars, identical to scripts/docx_to_text.py output (the agent's tested input)
+PASS B_eksik .pdf: 3264 chars, word recall vs .docx text 99.7%
+PASS x.doc: clear error -> ExtractDocumentText: legacy .doc is not supported. Save the document as .docx (or PDF) and send it again.
+PASS x.txt: clear error -> ExtractDocumentText: unsupported file type '.txt'. Supported: .docx, .pdf.
+PASS missing.docx: clear error -> ExtractDocumentText: file not found: C:/Users/PelinYetiş/Desktop/RegCheck Demo\orchestrator_tests\out\missing.docx
+
+== 1b. ExtractDocumentText on the new PDF test set (D, E, F)
+PASS D_klinik_uyumlu_aydinlatma_metni.pdf: 5879 chars; key phrases intact (Turkish characters, punctuation)
+PASS D_klinik_uyumlu_aydinlatma_metni.pdf: no replacement characters or glued words
+PASS D_klinik_uyumlu_aydinlatma_metni.pdf: word recall vs. independent extractor (PyMuPDF) 100.0%
+PASS E_spor_eksik_aydinlatma_metni.pdf: 4157 chars; key phrases intact (Turkish characters, punctuation)
+PASS E_spor_eksik_aydinlatma_metni.pdf: deliberately absent wording really absent
+PASS E_spor_eksik_aydinlatma_metni.pdf: no replacement characters or glued words
+PASS E_spor_eksik_aydinlatma_metni.pdf: word recall vs. independent extractor (PyMuPDF) 100.0%
+PASS F_fintech_sinirda_aydinlatma_metni.pdf: 5836 chars; key phrases intact (Turkish characters, punctuation)
+PASS F_fintech_sinirda_aydinlatma_metni.pdf: no replacement characters or glued words
+PASS F_fintech_sinirda_aydinlatma_metni.pdf: word recall vs. independent extractor (PyMuPDF) 100.0%
+
+== 2. FormatReviewText (agent outputs from runs/run5_needs_review)
+PASS A_uyumlu: humanReviewRequired=False
+PASS A_uyumlu: Sources section lists all 0 cited URLs
+PASS B_eksik: humanReviewRequired=False
+PASS B_eksik: Sources section lists all 2 cited URLs
+PASS C_sinirda: humanReviewRequired=True
+PASS C_sinirda: Sources section lists all 3 cited URLs
+PASS C without human_review_required: still true from the escalated finding
+PASS wrapped {"output": {...}} parses the same
+PASS double-encoded JSON string parses the same
+PASS ```json fenced block parses the same
+PASS []: clear error -> agentJson is empty: the ReviewAgent output was not passed to this step.
+PASS [{not json]: clear error -> agentJson is not valid JSON: 'n' is an invalid start of a property name. Expected a '"'. LineNumber: 0 | BytePositionInLine: 1.
+PASS [{"foo": 1}]: clear error -> agentJson has no 'findings' array: this is not the ReviewAgent output (see agent/output_schema.json).
+
+== 2b. Real UiPath agent output (document A, 2026-11-05)
+PASS real A: humanReviewRequired=false (human_review_required=false, no findings)
+PASS real A: overall_assessment and empty findings rendered
+PASS real A: trace span ({Attributes:{output:{...}}}) parses the same as the bare object
+PASS real A: report is schema-valid
+PASS real A: '6698 md. 10/1-x' elements resolved to their labels in the report
+PASS NormalizeElement handles '6698 md. 10/1-ç', '10/1-d', 'Tebliğ md. 5/1-g', 'other'
+
+== 2c. {"result": {...}} wrapper (runs/run7_result_wrapper, schema since 2026-11-05)
+PASS A_uyumlu: FormatReviewText same for wrapper and bare result (humanReviewRequired=False)
+PASS A_uyumlu: BuildReport from wrapper is schema-valid and contains the agent summary
+PASS B_eksik: FormatReviewText same for wrapper and bare result (humanReviewRequired=False)
+PASS B_eksik: BuildReport from wrapper is schema-valid and contains the agent summary
+PASS C_sinirda: FormatReviewText same for wrapper and bare result (humanReviewRequired=True)
+PASS C_sinirda: BuildReport from wrapper is schema-valid and contains the agent summary
+
+== 2d. English output (runs/run8_english)
+PASS A_uyumlu: English review text, humanReviewRequired=False
+PASS A_uyumlu: English report, schema-valid (A_uyumlu_aydinlatma_metni_RegCheck_Report_20261105-232137.docx)
+PASS B_eksik: English review text, humanReviewRequired=False
+PASS B_eksik: English report, schema-valid (B_eksik_aydinlatma_metni_RegCheck_Report_20261105-232137.docx)
+PASS C_sinirda: English review text, humanReviewRequired=True
+PASS C_sinirda: English report, schema-valid (C_sinirda_aydinlatma_metni_RegCheck_Report_20261105-232137.docx)
+
+== 2e. {"review": {...}} wrapper (runs/run9_review_wrapper; "result" is reserved in Maestro)
+PASS A_uyumlu: agent output has exactly one top-level field 'review'
+PASS A_uyumlu: FormatReviewText same for {review:...} and bare review (humanReviewRequired=False)
+PASS A_uyumlu: BuildReport from {review:...} is schema-valid
+PASS A_uyumlu: BuildReport text identical for wrapper and bare review
+PASS B_eksik: agent output has exactly one top-level field 'review'
+PASS B_eksik: FormatReviewText same for {review:...} and bare review (humanReviewRequired=False)
+PASS B_eksik: BuildReport from {review:...} is schema-valid
+PASS B_eksik: BuildReport text identical for wrapper and bare review
+PASS C_sinirda: agent output has exactly one top-level field 'review'
+PASS C_sinirda: FormatReviewText same for {review:...} and bare review (humanReviewRequired=True)
+PASS C_sinirda: BuildReport from {review:...} is schema-valid
+PASS C_sinirda: BuildReport text identical for wrapper and bare review
+
+== 2f. review_json contract (runs/run10_review_json): Maestro passes the review_json string to in_ReviewJson
+PASS A_uyumlu: agent output has exactly review_json, human_review_required=False, overall_assessment
+PASS A_uyumlu: FormatReviewText(review_json) humanReviewRequired=False matches top-level flag
+PASS A_uyumlu: double-encoded review_json parses the same
+PASS A_uyumlu: triple-encoded review_json parses the same
+PASS A_uyumlu: whole agent output (3 fields) parses the same
+PASS A_uyumlu: BuildReport(review_json) is schema-valid
+PASS A_uyumlu: BuildReport text identical for review_json, double-encoded and whole output
+PASS B_eksik: agent output has exactly review_json, human_review_required=False, overall_assessment
+PASS B_eksik: FormatReviewText(review_json) humanReviewRequired=False matches top-level flag
+PASS B_eksik: double-encoded review_json parses the same
+PASS B_eksik: triple-encoded review_json parses the same
+PASS B_eksik: whole agent output (3 fields) parses the same
+PASS B_eksik: BuildReport(review_json) is schema-valid
+PASS B_eksik: BuildReport text identical for review_json, double-encoded and whole output
+PASS C_sinirda: agent output has exactly review_json, human_review_required=True, overall_assessment
+PASS C_sinirda: FormatReviewText(review_json) humanReviewRequired=True matches top-level flag
+PASS C_sinirda: double-encoded review_json parses the same
+PASS C_sinirda: triple-encoded review_json parses the same
+PASS C_sinirda: whole agent output (3 fields) parses the same
+PASS C_sinirda: BuildReport(review_json) is schema-valid
+PASS C_sinirda: BuildReport text identical for review_json, double-encoded and whole output
+
+== 3. BuildReport
+PASS A_uyumlu_aydinlatma_metni_RegCheck_Report_20261105-232137.docx: OpenXML schema-valid (0 errors)
+PASS A_uyumlu : 'Reviewed by lawyer' section absent
+PASS A_uyumlu: 0 cited source URLs, all present as clickable hyperlinks
+PASS B_eksik_aydinlatma_metni_RegCheck_Report_20261105-232137.docx: OpenXML schema-valid (0 errors)
+PASS B_eksik : 'Reviewed by lawyer' section absent
+PASS B_eksik: 2 cited source URLs, all present as clickable hyperlinks
+PASS C_sinirda_aydinlatma_metni_RegCheck_Report_20261105-232137.docx: OpenXML schema-valid (0 errors)
+PASS C_sinirda Approve: 'Reviewed by lawyer' section present
+PASS C_sinirda: 3 cited source URLs, all present as clickable hyperlinks
+PASS C_sinirda_aydinlatma_metni_RegCheck_Report_20261105-232137.docx: OpenXML schema-valid (0 errors)
+PASS C_sinirda Reject: 'Reviewed by lawyer' section present
+PASS C_sinirda: 3 cited source URLs, all present as clickable hyperlinks
+
+ALL PASSED

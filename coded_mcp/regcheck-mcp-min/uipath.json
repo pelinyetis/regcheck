@@ -1,0 +1,19 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/uipath",
+  "id": "1e9dcbee-c527-4aae-999f-460b33db3e47",
+  "runtimeOptions": {
+    "isConversational": false
+  },
+  "packOptions": {
+    "fileExtensionsIncluded": [],
+    "filesIncluded": [
+      "vendor/mevzuat_mcp/LICENSE",
+      "vendor/yargi_mcp/LICENSE"
+    ],
+    "filesExcluded": [],
+    "directoriesExcluded": [],
+    "includeUvLock": true
+  },
+  "functions": {},
+  "agents": {}
+}

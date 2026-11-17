@@ -1,0 +1,43 @@
+KURGUSAL ÖRNEK BELGE – yalnızca demo amaçlıdır; gerçek bir şirkete ait değildir.
+KUZEY YILDIZI KİTAP VE KIRTASİYE TİCARET A.Ş.
+Müşteri ve Üyelik Süreçlerine İlişkin Kişisel Verilerin İşlenmesi Aydınlatma Metni
+Sürüm 1.0 – Yürürlük tarihi: 01.10.2026
+1. Veri Sorumlusu
+6698 sayılı Kişisel Verilerin Korunması Kanunu (“Kanun”) uyarınca, kişisel verileriniz veri sorumlusu sıfatıyla Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş. (“Şirket”) tarafından aşağıda açıklanan kapsamda işlenecektir.
+| Bilgi | Değer |
+| Unvan | Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş. |
+| MERSİS No | 0000-0000-0000-0001 (kurgusal) |
+| Adres | Örnek Mahallesi, Kurgu Sokak No: 7, 34000 Kadıköy/İstanbul |
+| E-posta | kvkk@kuzeyyildizi.example |
+| KEP adresi | kuzeyyildizi@kep.example |
+| Telefon | 0 (212) 000 00 00 |
+Şirket Türkiye’de yerleşik olduğundan veri sorumlusu temsilcisi atanmamıştır.
+2. İşlenen Kişisel Veri Kategorileri
+- Kimlik: ad, soyad.
+- İletişim: e-posta adresi, cep telefonu numarası, teslimat ve fatura adresi.
+- Müşteri işlem: sipariş geçmişi, sepet içeriği, iade ve değişim talepleri, müşteri hizmetleri yazışmaları.
+- Finans: fatura bilgileri. Kart bilgileriniz Şirket tarafından saklanmaz; ödeme kuruluşu tarafından işlenir.
+- İşlem güvenliği: IP adresi, oturum açma ve kapama kayıtları.
+- Pazarlama: ilgi alanları ve iletişim tercihleri (yalnızca açık rıza vermeniz hâlinde).
+3. Kişisel Verilerin İşlenme Amaçları
+Kişisel verileriniz aşağıdaki amaçlarla işlenmektedir:
+| İşleme amacı | Veri kategorisi |
+| Üyelik hesabının oluşturulması ve yönetilmesi | Kimlik, İletişim |
+| Siparişlerin alınması, teslimi, iade ve değişim işlemleri | Kimlik, İletişim, Müşteri işlem |
+| Fatura düzenlenmesi ve ticari defter/belgelerin saklanması (213 sayılı VUK, 6102 sayılı TTK) | Kimlik, Finans, Müşteri işlem |
+| Mesafeli satış kapsamında ön bilgilendirme ve cayma hakkı kayıtlarının tutulması (6502 sayılı Kanun) | Kimlik, İletişim, Müşteri işlem |
+| Hesap güvenliğinin sağlanması ve dolandırıcılığın önlenmesi | İşlem güvenliği |
+| Talep ve şikâyetlerin yanıtlanması | Kimlik, İletişim, Müşteri işlem |
+| Kampanya duyuruları ve kişiselleştirilmiş kitap önerileri gönderilmesi | İletişim, Pazarlama |
+4. Kişisel Verilerin Aktarılması
+Kişisel verileriniz, Kanun’un 8’inci maddesinde belirtilen şartlara uygun olarak aşağıdaki alıcı gruplarına, karşılarında belirtilen amaçlarla aktarılabilecektir:
+| Alıcı grubu | Aktarım amacı |
+| Kargo ve lojistik firmaları | Siparişlerin teslim edilmesi ve iade ürünlerin teslim alınması |
+| Ödeme kuruluşları ve bankalar | Ödemenin alınması ve iade tutarlarının ödenmesi |
+| Barındırma ve bulut hizmet sağlayıcısı (sunucuları Türkiye’de) | Verilerin güvenli biçimde saklanması ve sistemlerin işletilmesi |
+| Mali müşavir ve bağımsız denetim şirketi | Yasal muhasebe ve denetim yükümlülüklerinin yerine getirilmesi |
+| Yetkili kamu kurum ve kuruluşları (Gelir İdaresi Başkanlığı, Ticaret Bakanlığı) ve yargı mercileri | Hukuki yükümlülüklerin yerine getirilmesi; yalnızca kanuni talep hâlinde |
+Kişisel verileriniz yurt dışına aktarılmamaktadır.
+5. İletişim
+Kişisel verilerinize ilişkin her türlü soru ve talebiniz için kvkk@kuzeyyildizi.example adresinden bizimle iletişime geçebilirsiniz.
+Bu metin, Kanun’un 10’uncu maddesi uyarınca hazırlanmıştır. Açık rıza gerektiren işlemeler için ayrı bir Açık Rıza Metni sunulmaktadır.

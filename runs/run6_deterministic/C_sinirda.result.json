@@ -1,0 +1,79 @@
+{
+ "document_id": "C_sinirda",
+ "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+ "overall_assessment": "needs_human_review",
+ "summary": "Metin veri sorumlusu kimliği, amaçlar, toplama yöntemi/hukuki sebepler ve md. 11 haklarını somut biçimde içeriyor. Tek sorun, aktarım alıcılarının (\"iş ortakları, tedarikçiler, üçüncü kişiler\") ve aktarım amacının (\"ticari faaliyetlerin yürütülmesi\") genel ifadelerle verilmesidir (md. 10/1-c). Bu nokta bir hukukçu tarafından değerlendirilmelidir.",
+ "element_checks": [
+  {
+   "element": "10/1-a",
+   "status": "present",
+   "evidence": "Unvan: Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.; adres, e-posta, KEP, telefon; temsilci atanmamıştır."
+  },
+  {
+   "element": "10/1-b",
+   "status": "present",
+   "evidence": "Amaçlar tablosunda her amaç veri kategorisi ve hukuki sebeple eşleştirilmiş (üyelik, sipariş, fatura, güvenlik vb.)."
+  },
+  {
+   "element": "10/1-c",
+   "status": "deficient",
+   "evidence": "iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir."
+  },
+  {
+   "element": "10/1-ç",
+   "status": "present",
+   "evidence": "internet sitesi, mobil uygulama, çağrı merkezi ve e-posta kanalları... kısmen otomatik / otomatik olmayan yollarla; Kanun md. 5/2-c, 5/2-ç, 5/2-f, 5/2-e, 5/1."
+  },
+  {
+   "element": "10/1-d",
+   "status": "present",
+   "evidence": "Kanun'un 11'inci maddesi uyarınca ... öğrenme, bilgi talep etme, düzeltme, silme ... zararın giderilmesini talep etme haklarına sahipsiniz."
+  }
+ ],
+ "findings": [
+  {
+   "id": "F1",
+   "element": "10/1-c",
+   "issue_type": "deficient",
+   "severity": "medium",
+   "title": "Alıcı grupları ve aktarım amacı genel ifadelerle belirtilmiş",
+   "description": "Aktarım amacı yalnızca \"yukarıda sayılan amaçlar ve Şirket'in ticari faaliyetlerinin yürütülmesi\" olarak belirtilmiş; alıcılar \"iş ortakları, tedarikçiler, hizmet aldığımız üçüncü kişiler\" gibi geniş gruplarla sayılmış, hangi alıcı grubuna hangi veri/amaçla aktarım yapıldığı eşleştirilmemiştir (örn. kargo, ödeme kuruluşu, BT hizmet sağlayıcı). Kurul Kararı 2020/404'te alıcıların muğlak bırakılması ve amaç-veri eşleştirmesinin yapılmaması eksiklik olarak değerlendirilmiştir. Kamu kurumları ifadesi ise görece anlaşılırdır.",
+   "document_excerpt": "yukarıda sayılan amaçların gerçekleştirilmesi ve Şirket’in ticari faaliyetlerinin yürütülmesi kapsamında ... iş ortaklarımıza, tedarikçilerimize, hizmet aldığımız üçüncü kişilere ve yetkili kamu kurum ve kuruluşlarına aktarılabilecektir.",
+   "citations": [
+    {
+     "type": "kanun",
+     "reference": "6698 md. 10/1-c",
+     "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+     "supporting_quote": "c) İşlenen kişisel verilerin kimlere ve hangi amaçla aktarılabileceği,",
+     "retrieved_via": "system_prompt"
+    },
+    {
+     "type": "kurul_karari",
+     "reference": "Kurul Kararı 2020/404",
+     "source_url": "https://www.kvkk.gov.tr/Icerik/6913/2020-404",
+     "supporting_quote": "kimlere aktarım yapılacağının muğlak bir şekilde veri sorumlusuna bırakıldığı",
+     "retrieved_via": "get_kvkk_document_markdown"
+    }
+   ],
+   "confidence": 0.55,
+   "escalate": true,
+   "escalation_reason": "\"İş ortakları, tedarikçiler, hizmet aldığımız üçüncü kişiler\" ifadeleri ve \"ticari faaliyetlerin yürütülmesi\" aktarım amacı, md. 10/1-c ve Tebliğ'in alıcı grubu/aktarım amacı gerekliliği bakımından yeterli somutluk sayılır mı? Hukukçu karar vermelidir.",
+   "recommendation": "Alıcı gruplarını somutlaştırın (kargo/lojistik firmaları, ödeme kuruluşları, bilgi teknolojileri hizmet sağlayıcıları, yetkili kamu kurumları vb.) ve her grup için aktarım amacını ve ilgili veri kategorisini ayrı ayrı belirtin; \"ticari faaliyetlerin yürütülmesi\" gibi genel ifadeyi kaldırın."
+  }
+ ],
+ "penalty_exposure": {
+  "applicable": false,
+  "reference": "",
+  "range": "",
+  "source_url": "",
+  "note": "Belge non_compliant değil; eksik unsur tespit edilmemiş, yalnızca hukukçu incelemesi gerektiren yetersizlik bulunmaktadır."
+ },
+ "human_review_required": true,
+ "sources_consulted": [
+  {
+   "tool": "get_kvkk_document_markdown",
+   "input": "https://www.kvkk.gov.tr/Icerik/6913/2020-404 (sayfa 2)",
+   "used_in_findings": true
+  }
+ ]
+}

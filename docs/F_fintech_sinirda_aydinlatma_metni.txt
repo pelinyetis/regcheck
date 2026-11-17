@@ -1,0 +1,88 @@
+KURGUSAL ÖRNEK BELGE – yalnızca demo amaçlıdır; gerçek bir şirkete veya kişiye ait değildir.
+DEFNE ÖDEME VE ELEKTRONİK PARA HİZMETLERİ A.Ş. (“DefnePay”)
+DefnePay Mobil Uygulaması Kullanıcılarına Yönelik Kişisel Verilerin İşlenmesi Aydınlatma
+Metni
+Sürüm 3.0 – Yürürlük tarihi: 01.09.2026
+1. Veri Sorumlusu
+6698 sayılı Kişisel Verilerin Korunması Kanunu (“Kanun”) uyarınca, kişisel verileriniz veri sorumlusu sıfatıyla
+Defne Ödeme ve Elektronik Para Hizmetleri A.Ş. (“DefnePay”) tarafından aşağıda açıklanan kapsamda
+işlenecektir.
+Bilgi Değer
+Unvan Defne Ödeme ve Elektronik Para Hizmetleri A.Ş.
+MERSİS No 0000-0000-0000-0099 (kurgusal)
+Adres Deneme Mahallesi, Finans Bulvarı No: 21 Kat: 4, 34000 Ataşehir/İstanbul
+E-posta kvkk@defnepay.example
+KEP adresi defnepay@kep.example
+Telefon 0 (216) 000 00 00
+DefnePay Türkiye’de yerleşik olduğundan veri sorumlusu temsilcisi atanmamıştır.
+2. İşlenen Kişisel Veri Kategorileri
+– Kimlik: ad, soyad, T.C. kimlik numarası, doğum tarihi, kimlik belgesi görüntüsü.
+– İletişim: cep telefonu numarası, e-posta adresi, adres.
+– Müşteri işlem: elektronik para cüzdanı hareketleri, para transferi ve ödeme işlem kayıtları, işlem
+açıklamaları.
+– Finans: IBAN, bağlı banka kartının ilk altı ve son dört hanesi.
+– İşlem güvenliği: IP adresi, cihaz kimliği, oturum kayıtları, şifre ve doğrulama kodu kayıtları.
+– Risk yönetimi: müşterinin tanınmasına ilişkin kontrol sonuçları, şüpheli işlem değerlendirme kayıtları.
+– Pazarlama: kampanya tercihleri ve iletişim izinleri.
+3. Kişisel Verilerin İşlenme Amaçları ve Hukuki Sebepleri
+Kişisel verileriniz aşağıdaki amaçlarla işlenmektedir:
+– DefnePay hesabının açılması, kimliğinizin doğrulanması ve hesabın yönetilmesi,
+– Elektronik para ihracı, ödeme ve para transferi işlemlerinin gerçekleştirilmesi,
+– 5549 sayılı Suç Gelirlerinin Aklanmasının Önlenmesi Hakkında Kanun ve ilgili mevzuat kapsamında
+müşterinin tanınması, şüpheli işlem bildirimi ve kayıtların saklanması,
+– Dolandırıcılık ve yetkisiz işlemlerin önlenmesi, hesap ve işlem güvenliğinin sağlanması,
+– Müşteri talep ve şikâyetlerinin yanıtlanması,
+– Açık rızanızın bulunması hâlinde kampanya ve tanıtım iletilerinin gönderilmesi.
+Kişisel verileriniz, yukarıda belirtilen amaçlarla, Kanun’un 5’inci maddesinin ikinci fıkrasında sayılan
+kanunlarda açıkça öngörülmesi, bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması, veri
+sorumlusunun hukuki yükümlülüğünü yerine getirebilmesi için zorunlu olması ve ilgili kişinin temel hak ve
+özgürlüklerine zarar vermemek kaydıyla veri sorumlusunun meşru menfaatleri için veri işlenmesinin zorunlu
+olması hukuki sebeplerinden bir veya birkaçına dayanılarak; kampanya ve tanıtım iletileri bakımından ise
+Kanun’un 5’inci maddesinin birinci fıkrası uyarınca açık rızanıza dayanılarak işlenmektedir.
+4. Kişisel Verilerin Toplanma Yöntemi
+Kişisel verileriniz; DefnePay mobil uygulaması üzerinden hesap açılışı, kimlik doğrulama (kimlik kartı çipinin
+okunması ve görüntülü görüşme) ve işlem talimatları sırasında elektronik ortamda; müşteri hizmetleri çağrı
+merkezi ve e-posta kanalları aracılığıyla elektronik ortamda toplanmaktadır. Verileriniz, işlem ve güvenlik
+kayıtları bakımından otomatik yollarla, müşteri hizmetleri görüşmeleri bakımından kısmen otomatik yollarla
+elde edilmektedir.
+
+5. Kişisel Verilerin Aktarılması
+Kişisel verileriniz, Kanun’un 8’inci maddesinde belirtilen şartlara uygun olarak aşağıdaki alıcı gruplarına,
+karşılarında belirtilen amaçlarla aktarılabilecektir:
+Alıcı grubu Aktarım amacı
+Türkiye Cumhuriyet Merkez Bankası Ödeme ve elektronik para mevzuatı kapsamındaki raporlama ve
+denetim yükümlülüklerinin yerine getirilmesi
+Mali Suçları Araştırma Kurulu (MASAK) Şüpheli işlem bildirimi ve bilgi taleplerinin karşılanması
+Para transferi yaptığınız hesabın bulunduğu banka
+veya ödeme kuruluşu
+Transfer talimatınızın gerçekleştirilmesi
+Uzaktan kimlik doğrulama hizmeti aldığımız yurt
+içindeki hizmet sağlayıcı
+Hesap açılışında kimlik doğrulamanın yapılması
+Yetkili kamu kurum ve kuruluşları ile yargı
+mercileri
+Hukuki yükümlülüklerin yerine getirilmesi ve resmî taleplerin
+karşılanması
+Kişisel verileriniz yurt dışına aktarılmamaktadır.
+6. İlgili Kişi Olarak Haklarınız
+Kanun’un 11’inci maddesi uyarınca DefnePay’e başvurarak aşağıdaki haklarınızı kullanabilirsiniz:
+– a) Kişisel verilerinizin işlenip işlenmediğini öğrenme,
+– b) Kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme,
+– c) Kişisel verilerinizin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,
+– ç) Yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçüncü kişileri bilme,
+– d) Kişisel verilerinizin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme,
+– e) Kanun’un 7’nci maddesinde öngörülen şartlar çerçevesinde kişisel verilerinizin silinmesini veya yok
+edilmesini isteme,
+– f) (d) ve (e) bentleri uyarınca yapılan işlemlerin, kişisel verilerinizin aktarıldığı üçüncü kişilere bildirilmesini
+isteme,
+– g) İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir
+sonucun ortaya çıkmasına itiraz etme,
+– ğ) Kişisel verilerinizin kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın
+giderilmesini talep etme.
+Başvurularınızı, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ’e uygun olarak; Deneme
+Mahallesi, Finans Bulvarı No: 21 Kat: 4, 34000 Ataşehir/İstanbul adresine yazılı olarak,
+defnepay@kep.example KEP adresine veya sistemimizde kayıtlı e-posta adresinizden
+kvkk@defnepay.example adresine iletebilirsiniz. Başvurunuz, talebin niteliğine göre en geç otuz gün içinde
+ücretsiz olarak sonuçlandırılır; işlemin ayrıca bir maliyet gerektirmesi hâlinde Kurulca belirlenen tarifedeki
+ücret alınabilir.
+Kampanya ve tanıtım iletileri için açık rızanız uygulama içinde ayrı bir onay ekranı ile alınmaktadır.

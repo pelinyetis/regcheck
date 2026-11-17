@@ -1,0 +1,20 @@
+{
+    "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+    "$id": "entry-points.json",
+    "entryPoints": [
+        {
+            "filePath": "regcheck-min",
+            "uniqueId": "258b60e7-984e-4597-9595-028d8d12e416",
+            "type": "mcpserver",
+            "input": {
+                "type": "object",
+                "properties": {}
+            },
+            "output": {
+                "type": "object",
+                "properties": {}
+            },
+            "graph": null
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+ "document_id": "B_eksik",
+ "controller": "Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.",
+ "overall_assessment": "non_compliant",
+ "summary": "Metinde veri sorumlusunun kimliği, işleme amaçları ve alıcı grupları ile aktarım amaçları yeterli biçimde yer almaktadır. Ancak kişisel veri toplamanın yöntemi ve md. 5/6 kapsamındaki hukuki sebep açıkça belirtilmemiş (10/1-ç eksik) ve md. 11'deki haklar hiç sayılmamıştır (10/1-d eksik). Bu çalışmada araç çağrısı yapılamadığı (sağlık kontrolü ve Kurul kararı okuması yok) için bulgular yalnızca Kanun metnine dayanır.",
+ "element_checks": [
+  {
+   "element": "10/1-a",
+   "status": "present",
+   "evidence": "Unvan: Kuzey Yıldızı Kitap ve Kırtasiye Ticaret A.Ş.; adres, e-posta, KEP, telefon; \"veri sorumlusu temsilcisi atanmamıştır\""
+  },
+  {
+   "element": "10/1-b",
+   "status": "present",
+   "evidence": "Amaçlar tablosu: \"Üyelik hesabının oluşturulması ve yönetilmesi | Kimlik, İletişim\" (amaç-veri kategorisi eşleşmesi mevcut)"
+  },
+  {
+   "element": "10/1-c",
+   "status": "present",
+   "evidence": "\"Kargo ve lojistik firmaları | Siparişlerin teslim edilmesi ve iade ürünlerin teslim alınması\""
+  },
+  {
+   "element": "10/1-ç",
+   "status": "deficient",
+   "evidence": "Toplama yöntemi (kanal, otomatik/otomatik olmayan) belirtilmemiş; md. 5/6 hukuki sebepleri açıkça yazılmamış, yalnızca amaç satırlarında \"213 sayılı VUK, 6102 sayılı TTK\" gibi kanun atıfları var."
+  },
+  {
+   "element": "10/1-d",
+   "status": "missing",
+   "evidence": ""
+  }
+ ],
+ "findings": [
+  {
+   "id": "F1",
+   "element": "10/1-d",
+   "issue_type": "missing",
+   "severity": "high",
+   "title": "İlgili kişinin md. 11 kapsamındaki hakları belirtilmemiş",
+   "description": "Metinde ilgili kişinin hakları (öğrenme, bilgi talep etme, düzeltme, silme, üçüncü kişilere bildirim, itiraz, zararın giderilmesi vb.) sayılmamıştır. 5. bölüm yalnızca bir iletişim adresi vermektedir; bu, md. 10/1-d'yi karşılamaz. Bu bulgu için Kurul kararı okunmamıştır (araç kullanılamadı); yalnızca Kanun metnine dayanılmıştır.",
+   "document_excerpt": "Kişisel verilerinize ilişkin her türlü soru ve talebiniz için kvkk@kuzeyyildizi.example adresinden bizimle iletişime geçebilirsiniz.",
+   "citations": [
+    {
+     "type": "kanun",
+     "reference": "6698 md. 10/1-d",
+     "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+     "supporting_quote": "11 inci maddede sayılan diğer hakları,",
+     "retrieved_via": "system_prompt"
+    },
+    {
+     "type": "kanun",
+     "reference": "6698 md. 11/1",
+     "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+     "supporting_quote": "Kişisel veri işlenip işlenmediğini öğrenme,",
+     "retrieved_via": "system_prompt"
+    }
+   ],
+   "confidence": 0.95,
+   "escalate": false,
+   "escalation_reason": "",
+   "recommendation": "Md. 11/1 (a)–(ğ) bentlerindeki hakların tamamını metne ekleyin; başvuru yöntemini (yazılı, KEP, e-posta) ve başvuru usulünü belirtin."
+  },
+  {
+   "id": "F2",
+   "element": "10/1-ç",
+   "issue_type": "deficient",
+   "severity": "medium",
+   "title": "Toplama yöntemi ve hukuki sebep açıkça belirtilmemiş",
+   "description": "Verilerin hangi kanallardan (web sitesi, mobil uygulama, müşteri hizmetleri vb.) ve otomatik/otomatik olmayan yolla toplandığı belirtilmemiştir. Her işleme faaliyeti için dayanılan md. 5/6 hukuki sebebi de açıkça yazılmamış, yalnızca bazı amaç satırlarında kanun atıfları bulunmaktadır. Pazarlama için açık rıza ayrı metne bırakılmış, ancak hukuki sebep eşleşmesi yoktur. Bu bulgu için Kurul kararı okunmamıştır (araç kullanılamadı); yalnızca Kanun metnine dayanılmıştır.",
+   "document_excerpt": "Bu metin, Kanun’un 10’uncu maddesi uyarınca hazırlanmıştır. Açık rıza gerektiren işlemeler için ayrı bir Açık Rıza Metni sunulmaktadır.",
+   "citations": [
+    {
+     "type": "kanun",
+     "reference": "6698 md. 10/1-ç",
+     "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+     "supporting_quote": "Kişisel veri toplamanın yöntemi ve hukuki sebebi,",
+     "retrieved_via": "system_prompt"
+    }
+   ],
+   "confidence": 0.9,
+   "escalate": false,
+   "escalation_reason": "",
+   "recommendation": "Toplama kanallarını ve yöntemini (otomatik/otomatik olmayan) belirtin; her işleme amacı için dayanılan md. 5/2 veya md. 5/1 (açık rıza) hukuki sebebini açıkça eşleştirerek tabloya ekleyin."
+  }
+ ],
+ "penalty_exposure": {
+  "applicable": true,
+  "reference": "6698 md. 18/1-a",
+  "range": "5.000 TL – 100.000 TL (Kanun metnindeki tutar)",
+  "source_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5",
+  "note": "Tutarlar Kanun metnindeki tutarlardır; güncel (yeniden değerlenmiş) tutarlar hukukçu tarafından teyit edilmelidir."
+ },
+ "human_review_required": false,
+ "sources_consulted": []
+}

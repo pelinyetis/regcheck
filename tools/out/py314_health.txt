@@ -1,0 +1,17 @@
+isError: False
+{
+  "overall_status": "healthy",
+  "healthy_servers": 2,
+  "total_servers": 2,
+  "servers": {
+    "yargitay": {
+      "status": "healthy",
+      "response_time_ms": 755.976
+    },
+    "bedesten": {
+      "status": "healthy",
+      "response_time_ms": 406.54
+    }
+  },
+  "check_timestamp": "2026-11-04T23:16:28.525233"
+}

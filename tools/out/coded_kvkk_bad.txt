@@ -1,0 +1,13 @@
+isError: False
+{
+  "source_url": "https://example.com/x",
+  "title": null,
+  "decision_date": null,
+  "decision_number": null,
+  "subject_summary": null,
+  "markdown_chunk": null,
+  "current_page": 1,
+  "total_pages": 0,
+  "is_paginated": false,
+  "error_message": "Invalid KVKK decision URL format. URL must start with https://www.kvkk.gov.tr/"
+}
