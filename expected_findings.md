@@ -19,7 +19,7 @@ Note: Tebliğ 5/1-(c) was repealed by a 2019 amending Tebliğ, so it must not be
 
 ---
 
-## Document A: `A_uyumlu_aydinlatma_metni.docx` (compliant)
+## Document A: `A_uyumlu.pdf` (compliant)
 
 **Design:** every md. 10/1 element is present and specific:
 - an identity table, with a statement that there is no representative
@@ -42,7 +42,7 @@ Note: Tebliğ 5/1-(c) was repealed by a 2019 amending Tebliğ, so it must not be
 
 ---
 
-## Document B: `B_eksik_aydinlatma_metni.docx` (missing two required elements)
+## Document B: `B_eksik_aydinlatma_metni.pdf` (missing two required elements)
 
 **Design:** same as A except:
 1. The "Toplama yöntemi" section is **deleted**, and the purposes table has **no legal-basis column**.
@@ -68,7 +68,7 @@ The footer still claims "Bu metin, Kanun'un 10'uncu maddesi uyarınca hazırlanm
 
 ---
 
-## Document C: `C_sinirda_aydinlatma_metni.docx` (borderline)
+## Document C: `C_sinirda.pdf` (borderline)
 
 **Design:** same as A except the transfer table is replaced by one sentence:
 

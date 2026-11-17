@@ -16,27 +16,23 @@ int fails = 0;
 void Check(bool ok, string what) { Console.WriteLine((ok ? "PASS " : "FAIL ") + what); if (!ok) fails++; }
 string Rd(string p) => File.ReadAllText(p);
 
-var docs = new[] { ("A_uyumlu", "A_uyumlu_aydinlatma_metni"), ("B_eksik", "B_eksik_aydinlatma_metni"), ("C_sinirda", "C_sinirda_aydinlatma_metni") };
+// (document ID used in runs/ and expected_findings.md, file name in docs/ without .pdf)
+var docs = new[] { ("A_uyumlu", "A_uyumlu"), ("B_eksik", "B_eksik_aydinlatma_metni"), ("C_sinirda", "C_sinirda") };
+var refDir = Path.Combine(demo, "orchestrator_tests", "reference");
 var sender = "ornek.gonderen@example.com";   // fictional
+static HashSet<string> Words(string s) => s.Split(new[] { ' ', '\n', '\t', '|', '\r' }, StringSplitOptions.RemoveEmptyEntries).ToHashSet();
 
-Console.WriteLine("== 1. ExtractDocumentText");
+Console.WriteLine("== 1. ExtractDocumentText (A, B, C)");
 var extract = new ExtractDocumentText();
 foreach (var (_, file) in docs)
 {
-    var (text, n) = extract.Execute(Path.Combine(demo, "docs", file + ".docx"));
-    File.WriteAllText(Path.Combine(outDir, file + ".extracted.txt"), text);
-    // docs/*.txt were saved with CRLF by Python on Windows; the agent itself received LF text from docx_text()
-    var expected = Rd(Path.Combine(demo, "docs", file + ".txt")).Replace("\r\n", "\n");
-    Check(text == expected, $"{file}.docx: {n} chars, identical to scripts/docx_to_text.py output (the agent's tested input)");
-}
-{
-    var (pdfText, n) = extract.Execute(Path.Combine(demo, "docs", "B_eksik_aydinlatma_metni.pdf"));
-    File.WriteAllText(Path.Combine(outDir, "B_eksik_aydinlatma_metni.pdf.extracted.txt"), pdfText);
-    static HashSet<string> Words(string s) => s.Split(new[] { ' ', '\n', '\t', '|', '\r' }, StringSplitOptions.RemoveEmptyEntries).ToHashSet();
-    var w = Words(Rd(Path.Combine(demo, "docs", "B_eksik_aydinlatma_metni.txt")));
-    var got = Words(pdfText);
+    var (text, n) = extract.Execute(Path.Combine(demo, "docs", file + ".pdf"));
+    File.WriteAllText(Path.Combine(outDir, file + ".pdf.extracted.txt"), text);
+    // reference/<file>.docx.txt: the exact text the agent was evaluated on (scripts/docx_to_text.py on the original .docx)
+    var w = Words(Rd(Path.Combine(refDir, file + ".docx.txt")));
+    var got = Words(text);
     double recall = w.Count(got.Contains) / (double)w.Count;
-    Check(recall > 0.95, $"B_eksik .pdf: {n} chars, word recall vs .docx text {recall:P1}");
+    Check(recall > 0.95, $"{file}.pdf: {n} chars, word recall vs the agent's tested input text {recall:P1}");
 }
 foreach (var (path, expect) in new[] { ("x.doc", "legacy .doc"), ("x.txt", "unsupported file type"), ("missing.docx", "file not found") })
 {
@@ -46,15 +42,15 @@ foreach (var (path, expect) in new[] { ("x.doc", "legacy .doc"), ("x.txt", "unsu
     catch (Exception e) { Check(e.Message.Contains(expect), $"{path}: clear error -> {e.Message}"); }
 }
 
-Console.WriteLine("\n== 1b. ExtractDocumentText on the new PDF test set (D, E, F)");
+Console.WriteLine("\n== 1b. ExtractDocumentText (D, E, F)");
 {
     var defDocs = new (string file, string[] mustContain, string[] mustNotContain)[]
     {
         ("D_klinik_uyumlu_aydinlatma_metni", new[] { "Ilgaz Tıp Merkezi Sağlık Hizmetleri A.Ş.", "Kanun md. 6/3-e", "Sağlık verileri (özel nitelikli kişisel veri)",
             "Kişisel verileriniz yurt dışına aktarılmamaktadır.", "ğ) Kişisel verilerinizin kanuna aykırı olarak işlenmesi", "kvkk@ilgaztip.example" }, new string[0]),
-        ("E_spor_eksik_aydinlatma_metni", new[] { "Çınaraltı Spor ve Sağlıklı Yaşam Hizmetleri Ltd. Şti.", "Kanun md. 5/2-c", "kart okuyucular",
+        ("E_spor", new[] { "Çınaraltı Spor ve Sağlıklı Yaşam Hizmetleri Ltd. Şti.", "Kanun md. 5/2-c", "kart okuyucular",
             "ç) Yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçüncü kişileri bilme," }, new[] { "amacıyla", "Alıcı grubu", "aktarılabilecektir" }),
-        ("F_fintech_sinirda_aydinlatma_metni", new[] { "Defne Ödeme ve Elektronik Para Hizmetleri A.Ş.", "5549 sayılı Suç Gelirlerinin Aklanmasının Önlenmesi Hakkında Kanun",
+        ("F_fintech", new[] { "Defne Ödeme ve Elektronik Para Hizmetleri A.Ş.", "5549 sayılı Suç Gelirlerinin Aklanmasının Önlenmesi Hakkında Kanun",
             "hukuki sebeplerinden bir veya birkaçına dayanılarak", "Mali Suçları Araştırma Kurulu (MASAK)", "Kişisel verileriniz yurt dışına aktarılmamaktadır." }, new string[0]),
     };
     static string Flat(string t) => System.Text.RegularExpressions.Regex.Replace(t, @"\s+", " ");
@@ -63,14 +59,14 @@ Console.WriteLine("\n== 1b. ExtractDocumentText on the new PDF test set (D, E, F
     {
         var pdf = Path.Combine(demo, "docs", file + ".pdf");
         var (text, n) = extract.Execute(pdf);
-        File.WriteAllText(Path.Combine(demo, "docs", file + ".txt"), text);
+        File.WriteAllText(Path.Combine(outDir, file + ".pdf.extracted.txt"), text);
         var flat = Flat(text);
         var missing = must.Where(m => !flat.Contains(m)).ToList();
         Check(missing.Count == 0, $"{file}.pdf: {n} chars; key phrases intact (Turkish characters, punctuation)" + (missing.Count > 0 ? " MISSING: " + string.Join(" | ", missing) : ""));
         var present = mustNot.Where(m => flat.Contains(m)).ToList();
         if (mustNot.Length > 0) Check(present.Count == 0, $"{file}.pdf: deliberately absent wording really absent" + (present.Count > 0 ? " FOUND: " + string.Join(" | ", present) : ""));
         Check(!text.Contains('\uFFFD') && !System.Text.RegularExpressions.Regex.IsMatch(text, @"[a-zçğıöşü][A-ZÇĞİÖŞÜ]{2,}[a-zçğıöşü]"), $"{file}.pdf: no replacement characters or glued words");
-        var reference = W(File.ReadAllText(Path.Combine(outDir, file + ".pdf.pymupdf.txt")));
+        var reference = W(File.ReadAllText(Path.Combine(refDir, file + ".pymupdf.txt")));
         var got = W(text);
         double recall = reference.Count(got.Contains) / (double)reference.Count;
         Check(recall > 0.98, $"{file}.pdf: word recall vs. independent extractor (PyMuPDF) {recall:P1}");
@@ -83,7 +79,7 @@ var expectReview = new Dictionary<string, bool> { ["A_uyumlu"] = false, ["B_eksi
 foreach (var (id, file) in docs)
 {
     var json = Rd(Path.Combine(demo, "runs", "run5_needs_review", id + ".result.json"));
-    var (reviewText, humanReviewRequired) = fmt.Execute(json, file + ".docx", sender);
+    var (reviewText, humanReviewRequired) = fmt.Execute(json, file + ".pdf", sender);
     File.WriteAllText(Path.Combine(outDir, id + ".reviewText.txt"), reviewText);
     Check(humanReviewRequired == expectReview[id], $"{id}: humanReviewRequired={humanReviewRequired}");
     var urls = RegCheckShared.SourceUrls(RegCheckShared.ParseAgentJson(json));
@@ -113,12 +109,12 @@ Console.WriteLine("\n== 2b. Real UiPath agent output (document A, 2026-11-05)");
 {
     var real = Rd(Path.Combine(demo, "runs", "uipath_real", "A_agent_output.json"));        // what Maestro passes
     var span = Rd(Path.Combine(demo, "runs", "uipath_real", "A_agent_output_span.json"));   // trace span as shown in UiPath
-    var (rt, hr) = fmt.Execute(real, "A_uyumlu_aydinlatma_metni.docx", sender);
+    var (rt, hr) = fmt.Execute(real, "A_uyumlu.pdf", sender);
     File.WriteAllText(Path.Combine(outDir, "A_uipath_real.reviewText.txt"), rt);
     Check(!hr, "real A: humanReviewRequired=false (human_review_required=false, no findings)");
     Check(rt.Contains("Overall result: ✅ Compliant") && rt.Contains("Findings: none."), "real A: overall_assessment and empty findings rendered");
-    Check(fmt.Execute(span, "A_uyumlu_aydinlatma_metni.docx", sender).reviewText == rt, "real A: trace span ({Attributes:{output:{...}}}) parses the same as the bare object");
-    var (rp, _) = new BuildReport().Execute(real, "", "", "A_uyumlu_aydinlatma_metni.docx");
+    Check(fmt.Execute(span, "A_uyumlu.pdf", sender).reviewText == rt, "real A: trace span ({Attributes:{output:{...}}}) parses the same as the bare object");
+    var (rp, _) = new BuildReport().Execute(real, "", "", "A_uyumlu.pdf");
     var dest = Path.Combine(outDir, "A_uipath_real.report.docx");
     File.Copy(rp, dest, true);
     using var d = WordprocessingDocument.Open(dest, false);
@@ -135,10 +131,10 @@ foreach (var (id, file) in docs)
 {
     var wrapped = Rd(Path.Combine(demo, "runs", "run7_result_wrapper", id + ".result.json"));      // whole agent response
     var inner = JsonNode.Parse(wrapped)!["result"]!.ToJsonString();                                  // Maestro field "result"
-    var (rtW, hrW) = fmt.Execute(wrapped, file + ".docx", sender);
-    var (rtI, hrI) = fmt.Execute(inner, file + ".docx", sender);
+    var (rtW, hrW) = fmt.Execute(wrapped, file + ".pdf", sender);
+    var (rtI, hrI) = fmt.Execute(inner, file + ".pdf", sender);
     Check(rtW == rtI && hrW == hrI && hrW == expectReview[id], $"{id}: FormatReviewText same for wrapper and bare result (humanReviewRequired={hrW})");
-    var (pW, _) = new BuildReport().Execute(wrapped, id == "C_sinirda" ? "Approve" : "", "", file + ".docx");
+    var (pW, _) = new BuildReport().Execute(wrapped, id == "C_sinirda" ? "Approve" : "", "", file + ".pdf");
     using var dW = WordprocessingDocument.Open(pW, false);
     var tW = dW.MainDocumentPart!.Document!.Body!.InnerText;
     Check(new OpenXmlValidator().Validate(dW).Count() == 0 && tW.Contains(RegCheckShared.Str(JsonNode.Parse(inner), "summary").Substring(0, 40)),
@@ -149,13 +145,13 @@ Console.WriteLine("\n== 2d. English output (runs/run8_english)");
 foreach (var (id, file) in docs)
 {
     var json = Rd(Path.Combine(demo, "runs", "run8_english", id + ".result.json"));
-    var (rt, hr) = fmt.Execute(json, file + ".docx", sender);
+    var (rt, hr) = fmt.Execute(json, file + ".pdf", sender);
     File.WriteAllText(Path.Combine(outDir, id + ".english.reviewText.txt"), rt);
     Check(hr == expectReview[id] && rt.StartsWith("RegCheck · Privacy notice review") && rt.Contains("Overall result: ")
           && !System.Text.RegularExpressions.Regex.IsMatch(rt, "Belge:|Gönderen:|Genel sonuç:|Bulgular|Kaynaklar"),
           $"{id}: English review text, humanReviewRequired={hr}");
     bool c = id == "C_sinirda";
-    var (rp, rf) = new BuildReport().Execute(json, c ? "Approve" : "", c ? "Recipient groups are listed; acceptable for this demo. Add a recipient-to-purpose mapping in the next version." : "", file + ".docx");
+    var (rp, rf) = new BuildReport().Execute(json, c ? "Approve" : "", c ? "Recipient groups are listed; acceptable for this demo. Add a recipient-to-purpose mapping in the next version." : "", file + ".pdf");
     var dest = Path.Combine(outDir, id + (c ? "_Approve" : "") + ".english.report.docx");
     File.Copy(rp, dest, true);
     using var d = WordprocessingDocument.Open(dest, false);
@@ -173,11 +169,11 @@ foreach (var (id, file) in docs)
     var root = JsonNode.Parse(wrapped)!.AsObject();
     Check(root.Count == 1 && root["review"] is JsonObject, $"{id}: agent output has exactly one top-level field 'review'");
     var inner = root["review"]!.ToJsonString();                                                      // Maestro field "review"
-    var (rtW, hrW) = fmt.Execute(wrapped, file + ".docx", sender);
-    var (rtI, hrI) = fmt.Execute(inner, file + ".docx", sender);
+    var (rtW, hrW) = fmt.Execute(wrapped, file + ".pdf", sender);
+    var (rtI, hrI) = fmt.Execute(inner, file + ".pdf", sender);
     Check(rtW == rtI && hrW == hrI && hrW == expectReview[id], $"{id}: FormatReviewText same for {{review:...}} and bare review (humanReviewRequired={hrW})");
-    var (pW, _) = new BuildReport().Execute(wrapped, id == "C_sinirda" ? "Approve" : "", "", file + ".docx");
-    var (pI, _) = new BuildReport().Execute(inner, id == "C_sinirda" ? "Approve" : "", "", file + ".docx");
+    var (pW, _) = new BuildReport().Execute(wrapped, id == "C_sinirda" ? "Approve" : "", "", file + ".pdf");
+    var (pI, _) = new BuildReport().Execute(inner, id == "C_sinirda" ? "Approve" : "", "", file + ".pdf");
     string Body(string path) { using var d = WordprocessingDocument.Open(path, false); return System.Text.RegularExpressions.Regex.Replace(d.MainDocumentPart!.Document!.Body!.InnerText, @"\d{4}-\d{2}-\d{2} \d{2}:\d{2}", ""); }
     using (var dW = WordprocessingDocument.Open(pW, false))
         Check(new OpenXmlValidator().Validate(dW).Count() == 0, $"{id}: BuildReport from {{review:...}} is schema-valid");
@@ -195,16 +191,16 @@ foreach (var (id, file) in docs)
     bool topHr = root["human_review_required"]!.GetValue<bool>();
     Check(root.Count == 3 && root["overall_assessment"] is JsonValue && topHr == expectReview[id],
           $"{id}: agent output has exactly review_json, human_review_required={topHr}, overall_assessment");
-    var (rt, hr) = fmt.Execute(reviewJson, file + ".docx", sender);
+    var (rt, hr) = fmt.Execute(reviewJson, file + ".pdf", sender);
     Check(hr == topHr, $"{id}: FormatReviewText(review_json) humanReviewRequired={hr} matches top-level flag");
-    Check(fmt.Execute(doubleEncoded, file + ".docx", sender) == (rt, hr), $"{id}: double-encoded review_json parses the same");
-    Check(fmt.Execute(tripleEncoded, file + ".docx", sender) == (rt, hr), $"{id}: triple-encoded review_json parses the same");
-    Check(fmt.Execute(whole, file + ".docx", sender) == (rt, hr), $"{id}: whole agent output (3 fields) parses the same");
+    Check(fmt.Execute(doubleEncoded, file + ".pdf", sender) == (rt, hr), $"{id}: double-encoded review_json parses the same");
+    Check(fmt.Execute(tripleEncoded, file + ".pdf", sender) == (rt, hr), $"{id}: triple-encoded review_json parses the same");
+    Check(fmt.Execute(whole, file + ".pdf", sender) == (rt, hr), $"{id}: whole agent output (3 fields) parses the same");
     string Body(string path) { using var d = WordprocessingDocument.Open(path, false); return System.Text.RegularExpressions.Regex.Replace(d.MainDocumentPart!.Document!.Body!.InnerText, @"\d{4}-\d{2}-\d{2} \d{2}:\d{2}", ""); }
     string dec = id == "C_sinirda" ? "Approve" : "";
-    var (p1, _) = new BuildReport().Execute(reviewJson, dec, "", file + ".docx");
-    var (p2, _) = new BuildReport().Execute(doubleEncoded, dec, "", file + ".docx");
-    var (p3, _) = new BuildReport().Execute(whole, dec, "", file + ".docx");
+    var (p1, _) = new BuildReport().Execute(reviewJson, dec, "", file + ".pdf");
+    var (p2, _) = new BuildReport().Execute(doubleEncoded, dec, "", file + ".pdf");
+    var (p3, _) = new BuildReport().Execute(whole, dec, "", file + ".pdf");
     using (var d1 = WordprocessingDocument.Open(p1, false))
         Check(new OpenXmlValidator().Validate(d1).Count() == 0, $"{id}: BuildReport(review_json) is schema-valid");
     Check(Body(p1) == Body(p2) && Body(p1) == Body(p3), $"{id}: BuildReport text identical for review_json, double-encoded and whole output");
@@ -215,10 +211,10 @@ Console.WriteLine("\n== 3. BuildReport");
 var build = new BuildReport();
 var cases = new[]
 {
-    ("A_uyumlu", "", "", "A_uyumlu_aydinlatma_metni.docx"),
-    ("B_eksik", "", "", "B_eksik_aydinlatma_metni.docx"),
-    ("C_sinirda", "Approve", "Alıcı grupları sayılmış; demo kapsamında yeterli kabul edildi. Bir sonraki sürümde alıcı-amaç eşlemesi eklensin.", "C_sinirda_aydinlatma_metni.docx"),
-    ("C_sinirda", "Reject", "Aktarım amacı fazla genel; metin düzeltilmeden yayımlanmasın.", "C_sinirda_aydinlatma_metni.docx"),
+    ("A_uyumlu", "", "", "A_uyumlu.pdf"),
+    ("B_eksik", "", "", "B_eksik_aydinlatma_metni.pdf"),
+    ("C_sinirda", "Approve", "Alıcı grupları sayılmış; demo kapsamında yeterli kabul edildi. Bir sonraki sürümde alıcı-amaç eşlemesi eklensin.", "C_sinirda.pdf"),
+    ("C_sinirda", "Reject", "Aktarım amacı fazla genel; metin düzeltilmeden yayımlanmasın.", "C_sinirda.pdf"),
 };
 var validator = new OpenXmlValidator();
 foreach (var (id, decision, comment, name) in cases)

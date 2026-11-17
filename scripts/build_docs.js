@@ -1,6 +1,8 @@
 // Builds the 3 fictional KVKK aydınlatma metni test documents.
 // All company data is FICTIONAL (project rule: never real customer data).
 // Usage: node scripts/build_docs.js   (run from project root)
+// Output: docs/<name>.docx. The test documents in docs/ are PDFs: open each .docx in Word and
+// save it as PDF under the same name (docs/A_uyumlu.pdf, docs/B_eksik_aydinlatma_metni.pdf, docs/C_sinirda.pdf).
 const fs = require("fs");
 const path = require("path");
 const {
@@ -207,6 +209,9 @@ const styles = {
 };
 const numbering = { config: [{ reference: "bullets", levels: [{ level: 0, format: LevelFormat.BULLET, text: "•", alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 720, hanging: 360 } } } }] }] };
 
+// variant -> file name in docs/ (without extension)
+const FILE_NAMES = { A_uyumlu: "A_uyumlu", B_eksik: "B_eksik_aydinlatma_metni", C_sinirda: "C_sinirda" };
+
 (async () => {
   const outDir = path.join(process.cwd(), "docs");
   fs.mkdirSync(outDir, { recursive: true });
@@ -215,7 +220,7 @@ const numbering = { config: [{ reference: "bullets", levels: [{ level: 0, format
       creator: "Pelin Yetiş", lastModifiedBy: "Pelin Yetiş", title: `KVKK Aydınlatma Metni – ${name} (kurgusal)`,
       styles, numbering, sections: [{ properties: {}, children: build() }],
     });
-    const file = path.join(outDir, `${name}_aydinlatma_metni.docx`);
+    const file = path.join(outDir, `${FILE_NAMES[name]}.docx`);
     fs.writeFileSync(file, await Packer.toBuffer(doc));
     console.log("wrote", file);
   }

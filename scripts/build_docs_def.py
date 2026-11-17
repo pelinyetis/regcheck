@@ -1,5 +1,10 @@
 """Build the second fictional test set (D, E, F) as PDF files with a normal text layer.
 
+  Document IDs and the files they are written to (docs/):
+  D_klinik_uyumlu      -> D_klinik_uyumlu_aydinlatma_metni.pdf
+  E_spor_eksik         -> E_spor.pdf
+  F_fintech_sinirda    -> F_fintech.pdf
+
   D_klinik_uyumlu      private clinic, health data (KVKK md. 6), fully compliant
   E_spor_eksik         gym chain, md. 10/1-b (purposes) and 10/1-c (recipients/transfer) missing
   F_fintech_sinirda    payment app, borderline: legal bases listed but not mapped to purposes (10/1-ç)
@@ -169,7 +174,7 @@ def doc_e():
          *rights_section(4, "ÇınarFit’e", "kvkk@cinarfit.example", "cinarfit@kep.example", addr),
          P("Açık rızanıza dayanan işlemler için rızanız ayrı bir form ile alınmaktadır; açık rızanızı dilediğiniz zaman geri alabilirsiniz."),
          ]
-    build(ROOT / "docs" / "E_spor_eksik_aydinlatma_metni.pdf", s)
+    build(ROOT / "docs" / "E_spor.pdf", s)
 
 
 # ------------------------------------------------------------------ F: payment app, legal bases not mapped (borderline)
@@ -216,7 +221,7 @@ def doc_f():
          *rights_section(6, "DefnePay’e", "kvkk@defnepay.example", "defnepay@kep.example", addr),
          P("Kampanya ve tanıtım iletileri için açık rızanız uygulama içinde ayrı bir onay ekranı ile alınmaktadır."),
          ]
-    build(ROOT / "docs" / "F_fintech_sinirda_aydinlatma_metni.pdf", s)
+    build(ROOT / "docs" / "F_fintech.pdf", s)
 
 
 if __name__ == "__main__":

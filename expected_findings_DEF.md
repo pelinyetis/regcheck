@@ -5,10 +5,10 @@ Three new **fictional** privacy notices (aydınlatma metni), delivered as **PDF 
 | File | Sector / controller (fictional) | Designed outcome |
 |---|---|---|
 | `docs/D_klinik_uyumlu_aydinlatma_metni.pdf` | Private clinic, *Ilgaz Tıp Merkezi Sağlık Hizmetleri A.Ş.* (health data, KVKK md. 6) | compliant |
-| `docs/E_spor_eksik_aydinlatma_metni.pdf` | Gym chain, *Çınaraltı Spor ve Sağlıklı Yaşam Hizmetleri Ltd. Şti.* ("ÇınarFit") | non-compliant: **10/1-b** and **10/1-c** missing |
-| `docs/F_fintech_sinirda_aydinlatma_metni.pdf` | Payment / e-money app, *Defne Ödeme ve Elektronik Para Hizmetleri A.Ş.* ("DefnePay") | borderline: legal bases listed but **not mapped to purposes** (10/1-ç) |
+| `docs/E_spor.pdf` | Gym chain, *Çınaraltı Spor ve Sağlıklı Yaşam Hizmetleri Ltd. Şti.* ("ÇınarFit") | non-compliant: **10/1-b** and **10/1-c** missing |
+| `docs/F_fintech.pdf` | Payment / e-money app, *Defne Ödeme ve Elektronik Para Hizmetleri A.Ş.* ("DefnePay") | borderline: legal bases listed but **not mapped to purposes** (10/1-ç) |
 
-Generator: `scripts/build_docs_def.py` (reportlab, embedded Arial). Text extracted with our `ExtractDocumentText` code is saved next to each PDF as `docs/<name>.txt`.
+Generator: `scripts/build_docs_def.py` (reportlab, embedded Arial). Text extracted with our `ExtractDocumentText` code is saved by the test harness as `orchestrator_tests/out/<name>.pdf.extracted.txt`.
 
 The rules are the same as in `expected_findings.md`: the five md. 10/1 elements, the deterministic rule (`missing` → high confidence, not escalated; `deficient` → confidence ≤ 0.60, escalated), and `human_review_required` = any finding escalated.
 
@@ -98,7 +98,7 @@ The rules are the same as in `expected_findings.md`: the five md. 10/1 elements,
 
 ## Machine-readable expectations
 
-Same format as `expected_findings.md`. Document IDs follow the file names without `_aydinlatma_metni`.
+Same format as `expected_findings.md`. Document IDs: `D_klinik_uyumlu`, `E_spor_eksik`, `F_fintech_sinirda` (files: see the table at the top).
 
 ```json expected
 {
