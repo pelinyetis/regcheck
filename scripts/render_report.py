@@ -18,7 +18,7 @@ LABELS = {
 
 
 def render(result: dict, meta: dict | None = None) -> str:
-    env = Environment(loader=FileSystemLoader(ROOT / "agent"), trim_blocks=False, lstrip_blocks=False)
+    env = Environment(loader=FileSystemLoader(ROOT / "uipath" / "agent"), trim_blocks=False, lstrip_blocks=False)
     if isinstance(result, dict) and isinstance(result.get("review_json"), str):   # current contract
         result = json.loads(result["review_json"])
     for key in ("review", "result"):   # older wrappers (run9 "review", run7 "result")

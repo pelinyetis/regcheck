@@ -1,0 +1,6 @@
+{
+  "Name": "UploadDocstoSB",
+  "ProjectType": "Process",
+  "Description": "UploadDocstoSB",
+  "MainFile": "Main.xaml"
+}

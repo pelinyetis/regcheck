@@ -1,0 +1,6 @@
+{
+  "Name": "RegCheck_Orchestrator",
+  "ProjectType": "Process",
+  "Description": "RegCheck_Orchestrator",
+  "MainFile": "HumanReview.xaml"
+}

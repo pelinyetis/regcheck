@@ -1,0 +1,78 @@
+{
+  "name": "RegCheck_Orchestrator",
+  "projectId": "5140382b-106e-4bfa-8c81-242d20e1227e",
+  "description": "RegCheck_Orchestrator",
+  "main": "HumanReview.xaml",
+  "dependencies": {
+    "DocumentFormat.OpenXml": "[3.3.0]",
+    "PdfPig": "[0.1.16]",
+    "UiPath.Excel.Activities": "[3.4.1]",
+    "UiPath.FormActivityLibrary": "[2.0.8]",
+    "UiPath.Mail.Activities": "[2.7.12]",
+    "UiPath.MicrosoftOffice365.Activities": "[3.12.11]",
+    "UiPath.Persistence.Activities": "[1.13.0]",
+    "UiPath.System.Activities": "[25.10.5]",
+    "UiPath.Testing.Activities": "[25.10.2]",
+    "UiPath.UIAutomation.Activities": "[25.10.29]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.10.8.0",
+  "projectVersion": "1.0.10",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": false,
+    "supportsPersistence": true,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "cc673a8b-57b2-4bb4-9985-9fd71150dbc3",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "GenerateReport.xaml",
+      "uniqueId": "69e85316-7152-45fa-a256-45d4f37f95c6",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "HumanReview.xaml",
+      "uniqueId": "f95f49d6-8184-455f-a312-e44576b2fd85",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

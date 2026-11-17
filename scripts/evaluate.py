@@ -147,7 +147,7 @@ def evaluate_doc(doc_id: str, exp: dict, res: dict, meta: dict, prompt_text: str
 
 def main(run_dir: Path):
     exp = load_expected()
-    prompt_text = (ROOT / "agent" / "system_prompt.md").read_text(encoding="utf-8")
+    prompt_text = (ROOT / "uipath" / "agent" / "system_prompt.md").read_text(encoding="utf-8")
     rows = []
     for doc_id, e in exp.items():
         rp, mp = run_dir / f"{doc_id}.result.json", run_dir / f"{doc_id}.meta.json"

@@ -18,8 +18,8 @@ AGENTS.md
 
 # Local agent test runner and its MCP client configs
 scripts/run_agent.py
-agent/mcp.json
-agent/mcp_coded.json
+uipath/agent/mcp.json
+uipath/agent/mcp_coded.json
 
 # Raw run logs (keep only *.result.json fixtures and evaluation.md)
 runs/**/*.meta.json
@@ -34,3 +34,21 @@ __pycache__/
 .venv/
 node_modules/
 *.log
+
+# UiPath Studio: local cache, build output and temp files
+.local/
+.objects/
+*.nupkg
+.vs/
+.tmp/
+TestResults/
+*.bak
+*.bak_*
+*_backup/
+*_backup_*/
+*_before_fix_*/
+# Studio regenerates these from the tenant's Integration Service connections
+# (they contain connection names/mailbox addresses of the signed-in user)
+uipath/**/.codedworkflows/ConnectionsFactory.cs
+uipath/**/.codedworkflows/ConnectionsManager.cs
+uipath/**/.project/CodedBindingsMetadata.json

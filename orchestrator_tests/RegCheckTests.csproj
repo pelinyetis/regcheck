@@ -8,7 +8,9 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
-    <StudioProject>$(USERPROFILE)\Documents\UiPath\RegCheck_Orchestrator</StudioProject>
+    <!-- Defaults to the copy in this repo. To test a Studio working copy instead:
+         dotnet run -c Release -p:StudioProject="%USERPROFILE%\Documents\UiPath\RegCheck_Orchestrator" -->
+    <StudioProject Condition="'$(StudioProject)' == ''">$(MSBuildThisFileDirectory)..\uipath\RegCheck_Orchestrator</StudioProject>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(StudioProject)\*.cs" />

@@ -1,5 +1,5 @@
 """Fetch the full text of KVKK decisions through our Coded MCP server (get_kvkk_document_markdown),
-all pages, in one MCP session. Used to verify the curated decision list in agent/system_prompt.md.
+all pages, in one MCP session. Used to verify the curated decision list in uipath/agent/system_prompt.md.
 
 Usage: uv run --no-project --python 3.12 --with "mcp<2" python -I fetch_decisions.py <candidates.json> <out_dir> [server, default coded-min]
 candidates.json = {"2021-85": "https://www.kvkk.gov.tr/Icerik/7112/2021-85", ...}
